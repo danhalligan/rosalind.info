@@ -34,18 +34,18 @@ python3 ini.py test/rosalind_ini.txt
 
 ## Progress
 
-- [x] Introduction to the Bioinformatics Armory
-- [x] GenBank Introduction
-- [x] Data Formats
+- [x] [Introduction to the Bioinformatics Armory](ini.py)
+- [x] [GenBank Introduction](gbk.py)
+- [x] [Data Formats](frmt.py)
 - [x] New Motif Discovery
-- [x] Pairwise Global Alignment
-- [x] FASTQ format introduction
-- [x] Read Quality Distribution
-- [x] Protein Translation
-- [x] Read Filtration by Quality
-- [x] Complementing a Strand of DNA
-- [x] Suboptimal Local Alignment
-- [x] Base Quality Distribution
+- [x] [Pairwise Global Alignment](need.py)
+- [x] [FASTQ format introduction](tfsq.py)
+- [x] [Read Quality Distribution](phre.py)
+- [x] [Protein Translation](ptra.py)
+- [x] [Read Filtration by Quality](filt.py)
+- [x] [Complementing a Strand of DNA](rvco.py)
+- [x] [Suboptimal Local Alignment](subo.py)
+- [x] [Base Quality Distribution](bphr.py)
 - [x] Global Multiple Alignment
-- [x] Finding Genes with ORFs
-- [x] Base Filtration by Quality
+- [x] [Finding Genes with ORFs](orfr.py)
+- [x] [Base Filtration by Quality](bfil.py)
