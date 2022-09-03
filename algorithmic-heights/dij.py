@@ -2,7 +2,6 @@
 
 from helpers import parse_weighed_graph
 
-# from collections import Counter
 from math import inf
 from heapq import heappush, heappop
 

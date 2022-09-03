@@ -1,7 +1,7 @@
 # Insertion Sort
 
 # As mentioned in the problem, we will implement insertion sort and then
-# count swaps...
+# count swaps.
 
 from helpers import ints
 

@@ -33,3 +33,7 @@ python3 ini.py test/rosalind_fibo.txt
 ```{shell}
 ./solve.py test/rosalind_fibo.txt
 ```
+
+## About
+
+* My rosalind profile: https://rosalind.info/users/danhalligan/
