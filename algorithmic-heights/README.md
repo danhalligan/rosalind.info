@@ -23,22 +23,22 @@ python3 ini.py test/rosalind_fibo.txt
 
 ## Progress
 
-- [x] Fibonacci Numbers	6070
-- [x] Binary Search
-- [x] Degree Array
-- [x] Insertion Sort
-- [x] Double-Degree Array
-- [x] Majority Element
-- [x] Merge Two Sorted Arrays
-- [x] 2SUM
-- [x] Breadth-First Search
-- [x] Connected Components
-- [x] Merge Sort
-- [x] 2-Way Partition
-- [x] 3SUM
-- [x] Testing Acyclicity
-- [x] Dijkstra's Algorithm
-- [x] Counting Inversions
+- [x] [Fibonacci Numbers](fibo.py)
+- [x] [Binary Search](bins,py)
+- [x] [Degree Array](deg,py)
+- [x] [Insertion Sort](ins,py)
+- [x] [Double-Degree Array](ddeg,py)
+- [x] [Majority Element](maj,py)
+- [x] [Merge Two Sorted Arrays](mer,py)
+- [x] [2SUM](2sum,py)
+- [x] [Breadth-First Search](bfs,py)
+- [x] [Connected Components](cc,py)
+- [x] [Merge Sort](ms,py)
+- [x] [2-Way Partition](par,py)
+- [x] [3SUM](3sum,py)
+- [x] [Testing Acyclicity](dag,py)
+- [x] [Dijkstra's Algorithm](dij,py)
+- [x] [Counting Inversions](inv,py)
 - [ ] Building a Heap
 - [ ] Testing Bipartiteness
 - [ ] 3-Way Partition
