@@ -1,4 +1,4 @@
-# Bioinformatics Armory Solutions
+# Bioinformatics armory solutions
 
 Solutions to "[Bioinformatics Armory]" coding challenges from [rosalind.info].
 
@@ -31,3 +31,21 @@ python3 ini.py test/rosalind_ini.txt
 * For "subo", you need to run the online interface, identify the 32-40 bp and
   then can use the solution provided to count the occurrences of this in
   the sequences.
+
+## Progress
+
+- [x] Introduction to the Bioinformatics Armory
+- [x] GenBank Introduction
+- [x] Data Formats
+- [x] New Motif Discovery
+- [x] Pairwise Global Alignment
+- [x] FASTQ format introduction
+- [x] Read Quality Distribution
+- [x] Protein Translation
+- [x] Read Filtration by Quality
+- [x] Complementing a Strand of DNA
+- [x] Suboptimal Local Alignment
+- [x] Base Quality Distribution
+- [x] Global Multiple Alignment
+- [x] Finding Genes with ORFs
+- [x] Base Filtration by Quality

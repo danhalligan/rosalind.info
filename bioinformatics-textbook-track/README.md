@@ -1,4 +1,4 @@
-# Bioinformatics Algorithms Solutions
+# Bioinformatics textbook track solutions
 
 Solutions to bioinformatic coding challenges that feature within
 [Bioinformatics Algorithms: An Active Learning Approach].

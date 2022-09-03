@@ -1,4 +1,4 @@
-# Algorithmic Heights Solutions
+# Algorithmic heights solutions
 
 Solutions to "[Algorithmic Heights]" coding challenges from [rosalind.info].
 
@@ -20,3 +20,40 @@ python3 ini.py test/rosalind_fibo.txt
 ```{shell}
 ./solve.py test/rosalind_fibo.txt
 ```
+
+## Progress
+
+- [x] Fibonacci Numbers	6070
+- [x] Binary Search
+- [x] Degree Array
+- [x] Insertion Sort
+- [x] Double-Degree Array
+- [x] Majority Element
+- [x] Merge Two Sorted Arrays
+- [x] 2SUM
+- [x] Breadth-First Search
+- [x] Connected Components
+- [x] Merge Sort
+- [x] 2-Way Partition
+- [x] 3SUM
+- [x] Testing Acyclicity
+- [x] Dijkstra's Algorithm
+- [x] Counting Inversions
+- [ ] Building a Heap
+- [ ] Testing Bipartiteness
+- [ ] 3-Way Partition
+- [ ] Square in a Graph
+- [ ] Bellman-Ford Algorithm
+- [ ] Shortest Cycle Through a Given Edge
+- [ ] Topological Sorting
+- [ ] Heap Sort
+- [ ] Median
+- [ ] Partial Sort
+- [ ] Hamiltonian Path in DAG
+- [ ] Negative Weight Cycle
+- [ ] Quick Sort
+- [ ] Strongly Connected Components
+- [ ] 2-Satisfiability
+- [ ] General Sink
+- [ ] Semi-Connected Graph
+- [ ] Shortest Paths in DAG

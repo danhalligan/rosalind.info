@@ -1,5 +1,7 @@
 # [rosalind.info] solutions
 
+![http://rosalind.info](/images/logo.png)
+
 This repository contains solutions to bioinformatics coding challenges from
 [rosalind.info]. Problems are organised by the various different
 [locations]:
