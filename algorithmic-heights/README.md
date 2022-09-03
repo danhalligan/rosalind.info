@@ -23,37 +23,37 @@ python3 ini.py test/rosalind_fibo.txt
 
 ## Progress
 
-- [x] [Fibonacci Numbers](fibo.py)
-- [x] [Binary Search](bins.py)
-- [x] [Degree Array](deg.py)
-- [x] [Insertion Sort](ins.py)
-- [x] [Double-Degree Array](ddeg.py)
-- [x] [Majority Element](maj.py)
-- [x] [Merge Two Sorted Arrays](mer.py)
-- [x] [2SUM](2sum.py)
-- [x] [Breadth-First Search](bfs.py)
-- [x] [Connected Components](cc.py)
-- [x] [Merge Sort](ms.py)
-- [x] [2-Way Partition](par.py)
-- [x] [3SUM](3sum.py)
-- [x] [Testing Acyclicity](dag.py)
-- [x] [Dijkstra's Algorithm](dij.py)
-- [x] [Counting Inversions](inv.py)
-- [ ] Building a Heap
-- [ ] Testing Bipartiteness
-- [ ] 3-Way Partition
-- [ ] Square in a Graph
-- [ ] Bellman-Ford Algorithm
-- [ ] Shortest Cycle Through a Given Edge
-- [ ] Topological Sorting
-- [ ] Heap Sort
-- [ ] Median
-- [ ] Partial Sort
-- [ ] Hamiltonian Path in DAG
-- [ ] Negative Weight Cycle
-- [ ] Quick Sort
-- [ ] Strongly Connected Components
-- [ ] 2-Satisfiability
-- [ ] General Sink
-- [ ] Semi-Connected Graph
-- [ ] Shortest Paths in DAG
+- [x] [FIBO: Fibonacci Numbers](fibo.py)
+- [x] [BINS: Binary Search](bins.py)
+- [x] [DEG: Degree Array](deg.py)
+- [x] [INS: Insertion Sort](ins.py)
+- [x] [DDEG: Double-Degree Array](ddeg.py)
+- [x] [MAJ: Majority Element](maj.py)
+- [x] [MER: Merge Two Sorted Arrays](mer.py)
+- [x] [2SUM: 2SUM](2sum.py)
+- [x] [BFS: Breadth-First Search](bfs.py)
+- [x] [CC: Connected Components](cc.py)
+- [x] [MS: Merge Sort](ms.py)
+- [x] [PAR: 2-Way Partition](par.py)
+- [x] [3SUM: 3SUM](3sum.py)
+- [x] [DAG: Testing Acyclicity](dag.py)
+- [x] [DIJ: Dijkstra's Algorithm](dij.py)
+- [x] [INV: Counting Inversions](inv.py)
+- [ ] HEA: Building a Heap
+- [ ] BIP: Testing Bipartiteness
+- [ ] PAR3: 3-Way Partition
+- [ ] SQ: Square in a Graph
+- [ ] BF: Bellman-Ford Algorithm
+- [ ] CTE: Shortest Cycle Through a Given Edge
+- [ ] TS: Topological Sorting
+- [ ] HS: Heap Sort
+- [ ] MED: Median
+- [ ] PS: Partial Sort
+- [ ] HDAG: Hamiltonian Path in DAG
+- [ ] NWC: Negative Weight Cycle
+- [ ] QS: Quick Sort
+- [ ] SCC: Strongly Connected Components
+- [ ] 2SAT: 2-Satisfiability
+- [ ] GS: General Sink
+- [ ] SC: Semi-Connected Graph
+- [ ] SDAG: Shortest Paths in DAG
