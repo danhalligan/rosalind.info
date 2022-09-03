@@ -1,3 +1,4 @@
 def main(file):
-    lines = open(file).read().splitlines()
-    print(*[lines[i] for i in range(1, len(lines), 2)], sep="\n")
+    for i, line in enumerate(open(file).readlines()):
+        if i % 2 == 1:
+            print(line, end="")
