@@ -1,7 +1,7 @@
 # Trim a Peptide Leaderboard
 
-from ba4c import mass
-from ba4g import linear_score
+from .ba4c import mass
+from .ba4g import linear_score
 
 
 def cut(peptides, spectrum, n):

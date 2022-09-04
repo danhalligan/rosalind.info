@@ -1,6 +1,6 @@
 # Dijkstra's Algorithm
 
-from helpers import parse_weighed_graph
+from .helpers import parse_weighed_graph
 
 from math import inf
 from heapq import heappush, heappop

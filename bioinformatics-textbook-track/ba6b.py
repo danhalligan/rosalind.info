@@ -1,6 +1,6 @@
 # Compute the Number of Breakpoints in a Permutation
 
-from ba6a import read_perm
+from .ba6a import read_perm
 
 
 def nbreakpoints(perm):

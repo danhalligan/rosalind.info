@@ -1,6 +1,6 @@
 # Find a Profile-most Probable k-mer in a String
 
-from ba1a import substrings
+from .ba1a import substrings
 import math
 
 

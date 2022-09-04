@@ -1,8 +1,8 @@
 # Reconstruct a String from its Paired Composition
 
 from collections import defaultdict
-from ba3b import genome_path
-from ba3g import eulerian_path
+from .ba3b import genome_path
+from .ba3g import eulerian_path
 
 
 def dbru_paired(pairs):

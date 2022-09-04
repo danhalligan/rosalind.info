@@ -1,7 +1,7 @@
 # Compute the Number of Peptides of Given Total Mass
 
 from functools import cache
-from ba4c import mass
+from .ba4c import mass
 
 # The total number of ways to create a peptide of mass e.g. 1024 can be
 # calculated as the sum over ways to create a peptide of mass (1024-aa) for each

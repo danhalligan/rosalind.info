@@ -1,8 +1,8 @@
 # Reconstruct a String from its Paired Composition
 
-from ba3b import genome_path
-from ba3d import dbru
-from ba3g import count_connections
+from .ba3b import genome_path
+from .ba3d import dbru
+from .ba3g import count_connections
 
 
 def one_in_out(c):
@@ -37,5 +37,5 @@ def maximal_nonbranching_paths(graph):
 def main(file):
     dna = open(file).read().splitlines()
     graph = dbru(dna)
-    for path in maximal_nonbranching_paths(graph):
+    for path in sorted(maximal_nonbranching_paths(graph)):
         print(genome_path(path))

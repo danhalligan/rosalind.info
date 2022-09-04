@@ -1,6 +1,6 @@
 # Generate the k-mer Composition of a String
 
-from ba1a import substrings
+from .ba1a import substrings
 
 
 def main(file):

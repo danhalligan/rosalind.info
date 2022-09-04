@@ -1,6 +1,6 @@
 # Generate the d-Neighborhood of a String
 
-from ba1g import hamming
+from .ba1g import hamming
 
 
 def immediate_neighbors(seq):
@@ -28,4 +28,4 @@ def neighbors(seq, d):
 
 def main(file):
     seq, d = open(file).read().splitlines()
-    print(*neighbors(seq, int(d)), sep="\n")
+    print(*sorted(neighbors(seq, int(d))), sep="\n")

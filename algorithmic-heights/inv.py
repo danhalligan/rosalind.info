@@ -1,6 +1,6 @@
 # Counting Inversions
 
-from helpers import ints
+from .helpers import ints
 
 
 def mer2(a1, a2):

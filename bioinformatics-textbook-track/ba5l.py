@@ -1,7 +1,7 @@
 # Align Two Strings Using Linear Space
 
-from ba5e import blosum62
-from ba5k import middle_edge
+from .ba5e import blosum62
+from .ba5k import middle_edge
 
 
 def alignment_score(s1, s2, scores, penalty):

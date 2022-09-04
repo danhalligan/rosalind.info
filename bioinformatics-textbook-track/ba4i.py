@@ -1,7 +1,7 @@
 # Implement ConvolutionCyclopeptideSequencing
 
-from ba4h import spectrum_convolution
-from ba4g import leaderboard_cyclopeptide_sequencing
+from .ba4h import spectrum_convolution
+from .ba4g import leaderboard_cyclopeptide_sequencing
 
 
 def convolution_cyclopeptide_sequencing(m, n, spectrum):

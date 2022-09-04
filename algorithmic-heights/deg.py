@@ -1,6 +1,6 @@
 # Degree Array
 
-from helpers import parse_graph
+from .helpers import parse_graph
 
 
 def main(file):

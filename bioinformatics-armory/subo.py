@@ -18,11 +18,11 @@ def count_hamming(pattern, seq, dist=3):
     return count
 
 
-def main(file):
-    pattern = input("Enter to 32-40 bp pattern identified by Lalign: ")
+def main(file, pattern="GACTCCTTTGTTTGCCTTAAATAGATACATATTT"):
     seqs = [x.seq for x in SeqIO.parse(file, "fasta")]
     print(*[count_hamming(pattern, seq) for seq in seqs])
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    pattern = input("Enter to 32-40 bp pattern identified by Lalign: ")
+    main(sys.argv[1], pattern)

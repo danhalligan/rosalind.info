@@ -1,6 +1,6 @@
 # 2-Way Partition
 
-from helpers import ints
+from .helpers import ints
 
 
 def par(x):

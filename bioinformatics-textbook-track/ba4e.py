@@ -1,7 +1,7 @@
 # Find a Cyclic Peptide with Theoretical Spectrum Matching an Ideal Spectrum
 
-from ba4c import mass, cyclo_spectrum
-from ba1a import substrings
+from .ba4c import mass, cyclo_spectrum
+from .ba1a import substrings
 
 
 def expand(peptides, masses):

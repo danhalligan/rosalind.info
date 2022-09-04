@@ -4,7 +4,7 @@
 # I've implemented this, Moore's voting algorithm and using Counter (cheating!)
 
 from collections import defaultdict, Counter
-from helpers import ints
+from .helpers import ints
 
 # import timeit
 

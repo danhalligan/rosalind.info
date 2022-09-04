@@ -1,7 +1,7 @@
 # Generate the Frequency Array of a String
 
-from ba1a import pattern_count
-from ba1i import generate_kmers
+from .ba1a import pattern_count
+from .ba1i import generate_kmers
 
 
 def frequency_array(seq, k):

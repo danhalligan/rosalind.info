@@ -1,6 +1,6 @@
 # Merge Two Sorted Arrays
 
-from helpers import ints
+from .helpers import ints
 
 
 def mer(a1, a2):

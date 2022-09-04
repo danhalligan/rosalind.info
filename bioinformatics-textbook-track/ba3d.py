@@ -1,7 +1,7 @@
 # Construct the De Bruijn Graph of a String
 
 from collections import defaultdict
-from ba1a import substrings
+from .ba1a import substrings
 
 
 def dbru(seqs):

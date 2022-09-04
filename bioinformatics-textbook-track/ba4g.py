@@ -1,9 +1,9 @@
 # Implement LeaderboardCyclopeptideSequencing
 
-from ba4c import mass, cyclo_spectrum
-from ba1a import substrings
-from ba4f import score
-from ba4e import expand
+from .ba4c import mass, cyclo_spectrum
+from .ba1a import substrings
+from .ba4f import score
+from .ba4e import expand
 
 
 def linear_spectrum(peptide):

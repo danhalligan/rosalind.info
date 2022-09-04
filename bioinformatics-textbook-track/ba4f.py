@@ -1,6 +1,6 @@
 # Compute the Score of a Cyclic Peptide Against a Spectrum
 
-from ba4c import mass, cyclo_spectrum
+from .ba4c import mass, cyclo_spectrum
 
 
 def score(theoretical, expected):

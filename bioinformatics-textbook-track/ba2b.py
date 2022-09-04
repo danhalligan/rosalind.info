@@ -1,8 +1,8 @@
 # Find a Median String
 
-from ba1a import substrings
-from ba1i import generate_kmers
-from ba1g import hamming
+from .ba1a import substrings
+from .ba1i import generate_kmers
+from .ba1g import hamming
 import math
 
 

@@ -1,9 +1,9 @@
 # Find a k-Universal Circular String
 
 from itertools import product
-from ba3b import genome_path
-from ba3d import dbru
-from ba3f import eulerian_cycle
+from .ba3b import genome_path
+from .ba3d import dbru
+from .ba3f import eulerian_cycle
 
 
 def k_universal_binary_string(k):

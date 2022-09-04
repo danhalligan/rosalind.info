@@ -1,7 +1,7 @@
 # Merge Sort
 
-from mer import mer
-from helpers import ints
+from .mer import mer
+from .helpers import ints
 
 
 def ms(a):

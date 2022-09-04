@@ -1,6 +1,6 @@
 # Data Formats
 
-from gbk import entrez_email
+from .gbk import entrez_email
 from Bio import Entrez, SeqIO
 import sys
 

@@ -1,7 +1,7 @@
 # Compute the Score of a Linear Peptide
 
-from ba4g import linear_score
-from ba4c import mass
+from .ba4g import linear_score
+from .ba4c import mass
 
 
 def main(file):

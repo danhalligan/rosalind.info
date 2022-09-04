@@ -1,7 +1,7 @@
 # Pairwise Global Alignment
 
 from Bio import SeqIO
-from frmt import get_records
+from .frmt import get_records
 import sys
 
 

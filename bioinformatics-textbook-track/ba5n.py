@@ -1,4 +1,4 @@
-from ba5d import topological_order
+from .ba5d import topological_order
 from collections import defaultdict
 
 
@@ -13,4 +13,4 @@ def parse_graph(graph):
 
 def main(file):
     graph = open(file).read().splitlines()
-    print(*topological_order(parse_graph(graph)), sep=", ")
+    print(*sorted(topological_order(parse_graph(graph))), sep=", ")

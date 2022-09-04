@@ -2,9 +2,9 @@
 
 import math
 import random
-from ba1a import substrings
-from ba2d import create_profile, score
-from ba2f import minimise, rand_substring
+from .ba1a import substrings
+from .ba2d import create_profile, score
+from .ba2f import minimise, rand_substring
 
 
 def profile_probs(text, k, profile):

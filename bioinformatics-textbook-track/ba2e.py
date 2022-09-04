@@ -1,6 +1,6 @@
 # Implement GreedyMotifSearch with Pseudocounts
 
-from ba2d import greedy_motif_search
+from .ba2d import greedy_motif_search
 
 
 def main(file):

@@ -1,12 +1,15 @@
 # Bioinformatics textbook track solutions
 
-Solutions to bioinformatic coding challenges that feature within
-[Bioinformatics Algorithms: An Active Learning Approach].
+Solutions to bioinformatic coding challenges that feature within [Bioinformatics
+Algorithms: An Active Learning Approach]. The list of problems are also
+[available online] at [rosalind.info].
 
-The solutions here are relatively naive (and often do not incorporate the
-algorithmic improvements suggested within the "Charging station" sections).
+> A collection of exercises to accompany Bioinformatics Algorithms: An
+> Active-Learning Approach by Phillip Compeau & Pavel Pevzner. A full version of
+> this text is hosted on stepic.org
 
-The list of problems are also [available online] at [rosalind.info].
+My solutions are relatively naive (and often do not incorporate the algorithmic
+improvements suggested within the "Charging station" sections).
 
 [available online]: https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track
 [Bioinformatics Algorithms: An Active Learning Approach]: https://www.bioinformaticsalgorithms.org/

@@ -1,6 +1,6 @@
 # Find All Occurrences of a Pattern in a String
 
-from ba1a import substrings
+from .ba1a import substrings
 
 
 def pattern_find(text, pattern):

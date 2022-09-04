@@ -1,6 +1,6 @@
 # Construct a String Spelled by a Gapped Genome Path
 
-from ba3j import string_from_paired_composition
+from .ba3j import string_from_paired_composition
 
 
 def main(file):

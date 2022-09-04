@@ -1,9 +1,9 @@
 # Find Frequent Words with Mismatches and Reverse Complements
 
-from ba1c import revcomp
-from ba1g import hamming
-from ba1b import count_kmers, most_frequent
-from ba1i import generate_kmers
+from .ba1c import revcomp
+from .ba1g import hamming
+from .ba1b import count_kmers, most_frequent
+from .ba1i import generate_kmers
 
 
 def count_hamming_revcomp_kmers(kmers, d, k):

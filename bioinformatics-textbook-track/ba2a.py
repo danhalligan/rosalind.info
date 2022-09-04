@@ -1,8 +1,8 @@
 # Implement MotifEnumeration
 
-from ba1n import neighbors
-from ba1g import hamming
-from ba1a import substrings
+from .ba1n import neighbors
+from .ba1g import hamming
+from .ba1a import substrings
 
 
 def all_kmers(dna, k):
@@ -28,4 +28,4 @@ def motif_enumeration(dna, k, d):
 def main(file):
     ints, *dna = open(file).read().splitlines()
     k, d = map(int, ints.split())
-    print(*motif_enumeration(dna, k, d))
+    print(*sorted(motif_enumeration(dna, k, d)))

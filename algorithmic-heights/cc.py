@@ -1,6 +1,6 @@
 # Connected Components
 
-from helpers import parse_graph
+from .helpers import parse_graph
 
 
 def find_component(node, graph):

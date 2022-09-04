@@ -1,7 +1,7 @@
 # Find Patterns Forming Clumps in a String
 
 from collections import defaultdict
-from ba1a import substrings
+from .ba1a import substrings
 
 
 # find (0-based) positions of k-length kmers within text

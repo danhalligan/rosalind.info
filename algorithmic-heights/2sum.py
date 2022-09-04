@@ -4,7 +4,7 @@
 # and terminate on finding a valid pair (O[n^2]).
 # We'll use a hash for O(n)
 
-from helpers import ints
+from .helpers import ints
 
 
 def two_sum(n, a):

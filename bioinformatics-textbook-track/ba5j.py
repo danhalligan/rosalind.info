@@ -1,6 +1,6 @@
 # Align Two Strings Using Affine Gap Penalties
 
-from ba5e import blosum62
+from .ba5e import blosum62
 
 
 def insert_indel(word, i):

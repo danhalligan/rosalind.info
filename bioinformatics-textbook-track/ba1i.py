@@ -1,7 +1,7 @@
 # Find the Most Frequent Words with Mismatches in a String
 
-from ba1g import hamming
-from ba1b import count_kmers, most_frequent
+from .ba1g import hamming
+from .ba1b import count_kmers, most_frequent
 from itertools import product
 
 # Note, the best kmer might not be observed in our sequence. The simplistic

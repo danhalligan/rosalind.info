@@ -1,6 +1,6 @@
 # Construct the De Bruijn Graph of a String
 
-from ba3d import dbru
+from .ba3d import dbru
 
 
 def main(file):

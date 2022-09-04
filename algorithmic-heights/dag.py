@@ -1,6 +1,6 @@
 # Testing Acyclicity
 
-from helpers import parse_graphs
+from .helpers import parse_graphs
 
 # Recursively remove leaf nodes (with no onward connections)
 # If we remove all nodes, graph must be acyclic.

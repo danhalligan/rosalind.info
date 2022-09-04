@@ -1,8 +1,8 @@
 # Compute the Number of Times a Pattern Appears in a Text
 
 import re
-from ba4a import translate
-from ba1c import revcomp
+from .ba4a import translate
+from .ba1c import revcomp
 
 
 def transcribe(dna):

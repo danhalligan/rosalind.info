@@ -1,7 +1,7 @@
 # Implement GreedyMotifSearch
 
-from ba1a import substrings
-from ba2c import pmpkmer
+from .ba1a import substrings
+from .ba2c import pmpkmer
 from collections import Counter
 
 

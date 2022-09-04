@@ -1,7 +1,7 @@
 # Find the Most Frequent Words in a String
 
 from collections import defaultdict
-from ba1a import substrings
+from .ba1a import substrings
 
 
 def count_kmers(text, k):

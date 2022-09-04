@@ -1,7 +1,7 @@
 # Find a Middle Edge in an Alignment Graph in Linear Space
 
 from math import floor
-from ba5e import blosum62
+from .ba5e import blosum62
 
 
 # Calculate scores in linear space

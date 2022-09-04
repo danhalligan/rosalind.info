@@ -2,7 +2,7 @@
 
 from collections import defaultdict
 from copy import deepcopy
-from ba3f import parse_edges, eulerian_cycle
+from .ba3f import parse_edges, eulerian_cycle
 
 
 def count_connections(graph):

@@ -9,7 +9,6 @@ This repository contains solutions to bioinformatics coding challenges from
 * [Bioinformatics Textbook Track]: problems associated with [Bioinformatics
   Algorithms: An Active Learning Approach].
 
-
 [rosalind.info]: https://rosalind.info
 [locations]: https://rosalind.info/problems/locations/
 [Algorithmic Heights]: https://rosalind.info/problems/list-view/?location=algorithmic-heights

@@ -1,7 +1,7 @@
 # Implement RandomizedMotifSearch
 
-from ba2c import pmpkmer
-from ba2d import create_profile, score
+from .ba2c import pmpkmer
+from .ba2d import create_profile, score
 from random import randint
 import math
 

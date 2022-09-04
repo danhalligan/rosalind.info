@@ -1,6 +1,6 @@
 # Breadth-First Search
 
-from helpers import parse_graph
+from .helpers import parse_graph
 
 
 def bfs(graph):
