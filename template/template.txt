@@ -1,0 +1,15 @@
+# $title
+
+import sys
+
+
+def $code():
+    return None
+
+
+def main(file):
+    print($code())
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

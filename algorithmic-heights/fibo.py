@@ -1,5 +1,7 @@
 # Fibonacci Numbers
 
+import sys
+
 
 def fibo(n):
     x, y = 0, 1
@@ -11,3 +13,7 @@ def fibo(n):
 def main(file):
     n = int(open(file).read())
     print(fibo(n))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

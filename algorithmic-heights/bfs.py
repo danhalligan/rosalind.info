@@ -1,6 +1,7 @@
 # Breadth-First Search
 
 from .helpers import parse_graph
+import sys
 
 
 def bfs(graph):
@@ -20,3 +21,7 @@ def bfs(graph):
 def main(file):
     graph = parse_graph(open(file), directed=True)
     print(*bfs(graph))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

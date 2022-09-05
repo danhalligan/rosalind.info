@@ -1,10 +1,7 @@
 # 3SUM
 
-# Naively we would check all subsequent elements for each element
-# and terminate on finding a valid pair (O[n^2]).
-# We'll use a hash for O(n)
-
 from .helpers import ints
+import sys
 
 
 def three_sum(n, a):
@@ -23,3 +20,7 @@ def main(file):
     k, n = ints(info)
     for arr in arrays:
         print(*three_sum(int(n), ints(arr)))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

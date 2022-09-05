@@ -4,6 +4,7 @@ from .helpers import parse_weighed_graph
 
 from math import inf
 from heapq import heappush, heappop
+import sys
 
 
 def dij(graph):
@@ -27,3 +28,7 @@ def dij(graph):
 def main(file):
     graph = parse_weighed_graph(file)
     print(*dij(graph))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

@@ -4,6 +4,7 @@
 # count swaps.
 
 from .helpers import ints
+import sys
 
 
 def insertion_sort(x):
@@ -20,3 +21,7 @@ def insertion_sort(x):
 def main(file):
     n, x = open(file).read().splitlines()
     print(insertion_sort(ints(x)))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])
