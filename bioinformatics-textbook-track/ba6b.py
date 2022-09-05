@@ -9,4 +9,5 @@ def nbreakpoints(perm):
 
 
 def main(file):
-    print(nbreakpoints(read_perm(file)))
+    s = open(file).read().rstrip()
+    print(nbreakpoints(read_perm(s)))

@@ -22,7 +22,8 @@ for location in locations:
             problems.append([location, m.groups()[0]])
 
 
-# Run each command with a test file and snapshot the output
+# Run each command with a test file and check our snapshot
+# matches the downloaded Sample Output / "expected" version
 @pytest.mark.parametrize("problem", problems)
 def test_cli_function(capfd, snapshot, problem):
     path = "." + ".".join(problem)

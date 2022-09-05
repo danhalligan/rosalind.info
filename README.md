@@ -21,16 +21,48 @@ This repository contains solutions to bioinformatics coding challenges from
 Solutions for each problem are located in individual files inside the directory
 for each location.
 
-To run this tool to solve a particular problem, you can either run the script
-(providing the input file as a command line argument) or use `solve.py` which
-will solve based on the input file name.
+## Versioning
+
+Versioning of dependencies is controlled here with [poetry]. You can install
+the versions of dependencies used here with:
 
 ```{shell}
-python3 ini.py test/rosalind_fibo.txt
+poetry install
 ```
 
+To run solutions within this environment run, e.g.:
+
 ```{shell}
-./solve.py test/rosalind_fibo.txt
+poetry run python3 -m python-village.ini2 ~/Downloads/rosalind_ini2.txt
+```
+
+[poetry]: https://python-poetry.org/
+
+## Testing
+
+`pytest-snapshot` is used to test solutions to problems. In many cases solutions
+generated will and should exactly match the "Sample Output" given at
+rosalind.info. In cases cases, where e.g. ordering is not important, the
+expected solutions (in `tests/expected`) have been updated to match code used
+here, but are equally valid solutions.
+
+To run the tests use:
+
+```{shell}
+poetry run pytest rosalind
+```
+
+To update the tests (adding or modifying snapshots / expected output) use:
+
+```{shell}
+poetry run pytest --snapshot-update
+```
+
+Note that some solutions (that use Entrez) require an email address. This
+should be set as an environment variable, e.g.:
+
+```{shell}
+export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 ```
 
 ## About

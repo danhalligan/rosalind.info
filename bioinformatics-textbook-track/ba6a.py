@@ -13,8 +13,7 @@ def format_perm(perm):
     return "(" + " ".join([f"{x:+}" for x in perm]) + ")"
 
 
-def read_perm(file):
-    s = open(file).read().rstrip()
+def read_perm(s):
     return list(map(int, s[1:-1].split()))
 
 
@@ -29,5 +28,6 @@ def greedy_sorting(perm):
 
 
 def main(file):
-    for step in greedy_sorting(read_perm(file)):
+    s = open(file).read().rstrip()
+    for step in greedy_sorting(read_perm(s)):
         print(format_perm(step))

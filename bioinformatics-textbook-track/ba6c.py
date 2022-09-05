@@ -17,6 +17,9 @@ def find_component(node, graph):
     return visited
 
 
+# In the format chosen here, I take a directed edge +x (e.g. "+1")
+# and assign the node at the “head” of this edge as -1 and the
+# node at the “tail” as +1.
 def parse_genome_graph(s):
     g = defaultdict(list)
     for component in re.findall(r"\((.+?)\)", s):
