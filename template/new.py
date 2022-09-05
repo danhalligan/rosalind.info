@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from string import Template
 import requests
 import sys
+from pathlib import Path
 
 code = sys.argv[1].rstrip()
 
@@ -28,7 +29,7 @@ with open(f"{code}.txt", "w") as f:
 
 # Create template code
 print(f"Creating skeleton solution: {code}.py ...")
-s = Template(open("template.txt").read())
+s = Template(open(str(Path(__file__).parent) + "/template.txt").read())
 o = s.substitute(code=code, title=title)
 with open(f"{code}.py", "w") as f:
     f.write(o)

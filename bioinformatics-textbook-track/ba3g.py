@@ -8,7 +8,7 @@ from .ba3f import parse_edges, eulerian_cycle
 def count_connections(graph):
     counts = defaultdict(lambda: {"in": 0, "out": 0})
     v = sum(graph.values(), [])
-    for n in set(v):
+    for n in sorted(set(v)):
         counts[n]["in"] = v.count(n)
     for n in graph:
         counts[n]["out"] = len(graph[n])
