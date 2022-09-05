@@ -81,6 +81,9 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA5N: Find a Topological Ordering of a DAG](ba5n.py)
 - [x] [BA6A: Implement GreedySorting to Sort a Permutation by Reversals](ba6a.py)
 - [x] [BA6B: Compute the Number of Breakpoints in a Permutation](ba6b.py)
+- [x] [BA6C: Compute the 2-Break Distance Between a Pair of Genomes](ba6c.py)
+- [x] [BA6D: Find a Shortest Transformation of One Genome into Another by 2-Breaks](ba6d.py)
+- [x] [BA6E: Find All Shared k-mers of a Pair of Strings](ba6e.py)
 - [ ] BA10A: Compute the Probability of a Hidden Path
 - [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
 - [ ] BA10C: Implement the Viterbi Algorithm
@@ -102,9 +105,6 @@ improvements suggested within the "Charging station" sections).
 - [ ] BA11H: Compute the Size of a Spectral Dictionary
 - [ ] BA11I: Compute the Probability of a Spectral Dictionary
 - [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
-- [ ] BA6C: Compute the 2-Break Distance Between a Pair of Genomes
-- [ ] BA6D: Find a Shortest Transformation of One Genome into Another by 2-Breaks
-- [ ] BA6E: Find All Shared k-mers of a Pair of Strings
 - [ ] BA6F: Implement ChromosomeToCycle
 - [ ] BA6G: Implement CycleToChromosome
 - [ ] BA6H: Implement ColoredEdges
