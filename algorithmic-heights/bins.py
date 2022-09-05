@@ -1,4 +1,5 @@
 # Binary Search
+
 import sys
 
 
