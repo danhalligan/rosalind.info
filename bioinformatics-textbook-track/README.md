@@ -84,7 +84,11 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA6C: Compute the 2-Break Distance Between a Pair of Genomes](ba6c.py)
 - [x] [BA6D: Find a Shortest Transformation of One Genome into Another by 2-Breaks](ba6d.py)
 - [x] [BA6E: Find All Shared k-mers of a Pair of Strings](ba6e.py)
-- [ ] BA10A: Compute the Probability of a Hidden Path
+- [x] [BA6F: Implement ChromosomeToCycle](ba6f.py)
+- [x] [BA6G: Implement CycleToChromosome](ba6g.py)
+- [x] [BA6H: Implement ColoredEdges](ba6h.py)
+- [x] [BA6I: Implement GraphToGenome](ba6i.py)
+- [x] [BA6J: Implement 2-BreakOnGenomeGraph- [ ] BA10A: Compute the Probability of a Hidden Path](ba6j.py)
 - [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
 - [ ] BA10C: Implement the Viterbi Algorithm
 - [ ] BA10D: Compute the Probability of a String Emitted by an HMM
@@ -105,11 +109,6 @@ improvements suggested within the "Charging station" sections).
 - [ ] BA11H: Compute the Size of a Spectral Dictionary
 - [ ] BA11I: Compute the Probability of a Spectral Dictionary
 - [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
-- [ ] BA6F: Implement ChromosomeToCycle
-- [ ] BA6G: Implement CycleToChromosome
-- [ ] BA6H: Implement ColoredEdges
-- [ ] BA6I: Implement GraphToGenome
-- [ ] BA6J: Implement 2-BreakOnGenomeGraph
 - [ ] BA6K: Implement 2-BreakOnGenome
 - [ ] BA7A: Compute Distances Between Leaves
 - [ ] BA7B: Compute Limb Lengths in a Tree

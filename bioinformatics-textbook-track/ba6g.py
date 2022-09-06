@@ -14,13 +14,10 @@ def cycle2chromosome(cycle):
     return nodes
 
 
-def ba6f(s):
-    return cycle2chromosome(read_perm(s))
-
-
 def main(file):
     s = open(file).read().rstrip()
-    print(format_perm(ba6f(s)))
+    chrom = cycle2chromosome(read_perm(s))
+    print(format_perm(chrom))
 
 
 if __name__ == "__main__":
