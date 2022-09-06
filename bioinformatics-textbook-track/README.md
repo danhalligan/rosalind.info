@@ -89,6 +89,7 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA6H: Implement ColoredEdges](ba6h.py)
 - [x] [BA6I: Implement GraphToGenome](ba6i.py)
 - [x] [BA6J: Implement 2-BreakOnGenomeGraph- [ ] BA10A: Compute the Probability of a Hidden Path](ba6j.py)
+- [x] [BA6K: Implement 2-BreakOnGenome](ba6k.py)
 - [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
 - [ ] BA10C: Implement the Viterbi Algorithm
 - [ ] BA10D: Compute the Probability of a String Emitted by an HMM
@@ -109,7 +110,6 @@ improvements suggested within the "Charging station" sections).
 - [ ] BA11H: Compute the Size of a Spectral Dictionary
 - [ ] BA11I: Compute the Probability of a Spectral Dictionary
 - [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
-- [ ] BA6K: Implement 2-BreakOnGenome
 - [ ] BA7A: Compute Distances Between Leaves
 - [ ] BA7B: Compute Limb Lengths in a Tree
 - [ ] BA7C: Implement AdditivePhylogeny
