@@ -1,6 +1,5 @@
 # Implement GraphToGenome
 
-import sys
 import re
 from .ba6g import cycle2chromosome
 from .ba6a import format_perm
@@ -62,7 +61,3 @@ def main(file):
     s = open(file).read().rstrip()
     genome_graph = parse_edge_string(s)
     print(*[format_perm(x) for x in graph2genome(genome_graph)], sep="")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

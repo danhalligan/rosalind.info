@@ -1,6 +1,5 @@
 # Compute the 2-Break Distance Between a Pair of Genomes
 
-import sys
 import re
 from collections import defaultdict
 
@@ -56,7 +55,3 @@ def ba6c(genomes):
 def main(file):
     genomes = [parse_genome_graph(s) for s in open(file).read().splitlines()]
     print(ba6c(genomes))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

@@ -1,6 +1,5 @@
 # Compute Distances Between Leaves
 
-import sys
 from re import split
 from collections import defaultdict
 from math import inf
@@ -57,7 +56,3 @@ def main(file):
     graph = parse_weighed_graph(edges)
     for i in range(n_leaves):
         print(*dij(i, graph)[:n_leaves])
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

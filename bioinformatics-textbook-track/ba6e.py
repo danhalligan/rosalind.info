@@ -1,6 +1,5 @@
 # Find All Shared k-mers of a Pair of Strings
 
-import sys
 import re
 from .ba1c import revcomp
 
@@ -22,7 +21,3 @@ def main(file):
     k, s1, s2 = open(file).read().splitlines()
     for match in ba6e(int(k), s1, s2):
         print(match)
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

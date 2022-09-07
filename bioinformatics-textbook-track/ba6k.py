@@ -1,6 +1,5 @@
 # Implement 2-BreakOnGenome
 
-import sys
 from .ba6a import read_perm, format_perm
 from .ba6h import colored_edges
 from .ba6j import two_break_on_genome_graph
@@ -23,7 +22,3 @@ def main(file):
     genome = read_perm(genome)
     new = two_break_on_genome(genome, *ints(ind))
     print(*[format_perm(x) for x in new])
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

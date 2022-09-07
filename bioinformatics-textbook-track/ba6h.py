@@ -1,6 +1,5 @@
 # Implement ColoredEdges
 
-import sys
 import re
 from .ba6f import chromosome2cycle
 
@@ -25,7 +24,3 @@ def main(file):
     P = [ints(x) for x in re.findall(r"\((.+?)\)", s)]
     edges = [(k, v) for k, v in colored_edges(P).items()]
     print(*edges, sep=", ")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

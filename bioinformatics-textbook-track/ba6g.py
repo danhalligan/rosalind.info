@@ -1,6 +1,5 @@
 # Implement ChromosomeToCycle
 
-import sys
 from .ba6a import read_perm, format_perm
 
 
@@ -18,7 +17,3 @@ def main(file):
     s = open(file).read().rstrip()
     chrom = cycle2chromosome(read_perm(s))
     print(format_perm(chrom))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

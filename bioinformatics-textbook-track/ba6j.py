@@ -1,6 +1,5 @@
 # Implement 2-BreakOnGenomeGraph
 
-import sys
 from .ba6i import parse_edge_string
 from copy import copy
 
@@ -32,7 +31,3 @@ def main(file):
     new = two_break_on_genome_graph(graph, *edges)
     edges = [(k, v) for k, v in new.items()]
     print(*edges, sep=", ")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

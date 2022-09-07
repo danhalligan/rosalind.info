@@ -1,6 +1,5 @@
 # Find a Shortest Transformation of One Genome into Another by 2-Breaks
 
-import sys
 from .ba6c import find_component, parse_genome_graph, breakpoint_graph
 from .ba6a import format_perm
 
@@ -86,7 +85,3 @@ def main(file):
     P, Q = [parse_genome_graph(s) for s in open(file).read().splitlines()]
     for g in ba6d(P, Q):
         print(g)
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

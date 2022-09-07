@@ -1,6 +1,5 @@
 # Implement ChromosomeToCycle
 
-import sys
 from .ba6a import read_perm
 
 
@@ -25,7 +24,3 @@ def format_cycle(cycle):
 def main(file):
     s = open(file).read().rstrip()
     print(format_cycle(ba6f(s)))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

@@ -28,7 +28,7 @@ for location in locations:
 def test_cli_function(capfd, snapshot, problem):
     path = "." + ".".join(problem)
     module = import_module(path, package="rosalind")
-    test_file = f"{problem[0]}/test/rosalind_{problem[1]}.txt"
+    test_file = f"tests/data/{problem[0]}/rosalind_{problem[1]}.txt"
     random.seed(42)
     getattr(module, "main")(test_file)
     out, _ = capfd.readouterr()
