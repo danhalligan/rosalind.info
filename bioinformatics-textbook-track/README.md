@@ -90,9 +90,9 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA6I: Implement GraphToGenome](ba6i.py)
 - [x] [BA6J: Implement 2-BreakOnGenomeGraph- [ ] BA10A: Compute the Probability of a Hidden Path](ba6j.py)
 - [x] [BA6K: Implement 2-BreakOnGenome](ba6k.py)
-- [ ] BA7A: Compute Distances Between Leaves
-- [ ] BA7B: Compute Limb Lengths in a Tree
-- [ ] BA7C: Implement AdditivePhylogeny
+- [x] [BA7A: Compute Distances Between Leaves](ba7a.py)
+- [x] [BA7B: Compute Limb Lengths in a Tree](ba7b.py)
+- [x] [BA7C: Implement AdditivePhylogeny](ba7c.py)
 - [ ] BA7D: Implement UPGMA
 - [ ] BA7E: Implement the Neighbor Joining Algorithm
 - [ ] BA7F: Implement SmallParsimony

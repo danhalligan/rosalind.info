@@ -26,13 +26,13 @@ Solutions to "[Algorithmic Heights]" coding challenges from [rosalind.info].
 - [x] [DAG: Testing Acyclicity](dag.py)
 - [x] [DIJ: Dijkstra's Algorithm](dij.py)
 - [x] [INV: Counting Inversions](inv.py)
+- [x] [TS: Topological Sorting](ts.py)
 - [ ] HEA: Building a Heap
 - [ ] BIP: Testing Bipartiteness
 - [ ] PAR3: 3-Way Partition
 - [ ] SQ: Square in a Graph
 - [ ] BF: Bellman-Ford Algorithm
 - [ ] CTE: Shortest Cycle Through a Given Edge
-- [ ] TS: Topological Sorting
 - [ ] HS: Heap Sort
 - [ ] MED: Median
 - [ ] PS: Partial Sort

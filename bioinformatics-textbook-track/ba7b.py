@@ -6,17 +6,17 @@ def parse_mat(lines):
     return [[int(x) for x in y.split()] for y in lines]
 
 
-def limb(j, d):
+def limb(D, j):
     """Calculate limb length j for distance matrix d"""
     limb_len = 100000
-    n = len(d)
+    n = len(D)
     for k in range(int(n)):
         for i in range(int(n)):
             if j != k and i != j:
-                limb_len = min((d[i][j] + d[j][k] - d[i][k]) // 2, limb_len)
+                limb_len = min((D[i][j] + D[j][k] - D[i][k]) // 2, limb_len)
     return limb_len
 
 
 def main(file):
     _, j, *arr = open(file).read().splitlines()
-    print(limb(int(j), parse_mat(arr)))
+    print(limb(parse_mat(arr), int(j)))
