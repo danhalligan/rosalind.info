@@ -90,26 +90,6 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA6I: Implement GraphToGenome](ba6i.py)
 - [x] [BA6J: Implement 2-BreakOnGenomeGraph- [ ] BA10A: Compute the Probability of a Hidden Path](ba6j.py)
 - [x] [BA6K: Implement 2-BreakOnGenome](ba6k.py)
-- [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
-- [ ] BA10C: Implement the Viterbi Algorithm
-- [ ] BA10D: Compute the Probability of a String Emitted by an HMM
-- [ ] BA10E: Construct a Profile HMM
-- [ ] BA10F: Construct a Profile HMM with Pseudocounts
-- [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
-- [ ] BA10H: Estimate the Parameters of an HMM
-- [ ] BA10I: Implement Viterbi Learning
-- [ ] BA10J: Solve the Soft Decoding Problem
-- [ ] BA10K: Implement Baum-Welch Learning
-- [ ] BA11A: Construct the Graph of a Spectrum
-- [ ] BA11B: Implement DecodingIdealSpectrum
-- [ ] BA11C: Convert a Peptide into a Peptide Vector
-- [ ] BA11D: Convert a Peptide Vector into a Peptide
-- [ ] BA11E: Sequence a Peptide
-- [ ] BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum
-- [ ] BA11G: Implement PSMSearch
-- [ ] BA11H: Compute the Size of a Spectral Dictionary
-- [ ] BA11I: Compute the Probability of a Spectral Dictionary
-- [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
 - [ ] BA7A: Compute Distances Between Leaves
 - [ ] BA7B: Compute Limb Lengths in a Tree
 - [ ] BA7C: Implement AdditivePhylogeny
@@ -140,3 +120,23 @@ improvements suggested within the "Charging station" sections).
 - [ ] BA9P: Implement TreeColoring
 - [ ] BA9Q: Construct the Partial Suffix Array of a String
 - [ ] BA9R: Construct a Suffix Tree from a Suffix Array
+- [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
+- [ ] BA10C: Implement the Viterbi Algorithm
+- [ ] BA10D: Compute the Probability of a String Emitted by an HMM
+- [ ] BA10E: Construct a Profile HMM
+- [ ] BA10F: Construct a Profile HMM with Pseudocounts
+- [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
+- [ ] BA10H: Estimate the Parameters of an HMM
+- [ ] BA10I: Implement Viterbi Learning
+- [ ] BA10J: Solve the Soft Decoding Problem
+- [ ] BA10K: Implement Baum-Welch Learning
+- [ ] BA11A: Construct the Graph of a Spectrum
+- [ ] BA11B: Implement DecodingIdealSpectrum
+- [ ] BA11C: Convert a Peptide into a Peptide Vector
+- [ ] BA11D: Convert a Peptide Vector into a Peptide
+- [ ] BA11E: Sequence a Peptide
+- [ ] BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum
+- [ ] BA11G: Implement PSMSearch
+- [ ] BA11H: Compute the Size of a Spectral Dictionary
+- [ ] BA11I: Compute the Probability of a Spectral Dictionary
+- [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
