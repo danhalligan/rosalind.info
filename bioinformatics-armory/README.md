@@ -29,10 +29,10 @@ to use installed bioinformatics tools (or web interfaces).
 
 ## Notes
 
-* For "MEME" and "CLUS" there are solutions. Use the web interface as
+* For "MEME" and "CLUS" I have not written a solution. Use the web interface as
   instructed.
 * For "SUBO", you need to run the online interface, identify the 32-40 bp and
-  then can use the solution provided to count the occurrences of this in
+  then can use the solution here to count the occurrences of this in
   the sequences.
 
 [Bioinformatics Armory]: https://rosalind.info/problems/list-view/?location=bioinformatics-armory

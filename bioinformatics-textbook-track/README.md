@@ -88,7 +88,7 @@ improvements suggested within the "Charging station" sections).
 - [x] [BA6G: Implement CycleToChromosome](ba6g.py)
 - [x] [BA6H: Implement ColoredEdges](ba6h.py)
 - [x] [BA6I: Implement GraphToGenome](ba6i.py)
-- [x] [BA6J: Implement 2-BreakOnGenomeGraph- [ ] BA10A: Compute the Probability of a Hidden Path](ba6j.py)
+- [x] [BA6J: Implement 2-BreakOnGenomeGraph](ba6j.py)
 - [x] [BA6K: Implement 2-BreakOnGenome](ba6k.py)
 - [x] [BA7A: Compute Distances Between Leaves](ba7a.py)
 - [x] [BA7B: Compute Limb Lengths in a Tree](ba7b.py)
@@ -120,6 +120,7 @@ improvements suggested within the "Charging station" sections).
 - [ ] BA9P: Implement TreeColoring
 - [ ] BA9Q: Construct the Partial Suffix Array of a String
 - [ ] BA9R: Construct a Suffix Tree from a Suffix Array
+- [ ] BA10A: Compute the Probability of a Hidden Path
 - [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
 - [ ] BA10C: Implement the Viterbi Algorithm
 - [ ] BA10D: Compute the Probability of a String Emitted by an HMM

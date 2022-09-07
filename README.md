@@ -4,17 +4,15 @@ This repository contains solutions to bioinformatics coding challenges from
 [rosalind.info]. Problems are organised by the various different
 [locations]:
 
-* [Algorithmic Heights]
-* [Bioinformatics Armory]
+* [Python Village]: initial problems to learn a few basics about the Python
+  programming language.
+* [Bioinformatics Stronghold]: Problems to discover the algorithms underlying a
+  variety of bioinformatics topics.
+* [Algorithmic Heights]: exercises to accompany the book [Algorithms].
+* [Bioinformatics Armory]: unlike the stronghold in the Armory we solve
+  problems using existing tools.
 * [Bioinformatics Textbook Track]: problems associated with [Bioinformatics
   Algorithms: An Active Learning Approach].
-
-[rosalind.info]: https://rosalind.info
-[locations]: https://rosalind.info/problems/locations/
-[Algorithmic Heights]: https://rosalind.info/problems/list-view/?location=algorithmic-heights
-[Bioinformatics Armory]: https://rosalind.info/problems/list-view/?location=bioinformatics-armory
-[Bioinformatics Textbook Track]: https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track
-[Bioinformatics Algorithms: An Active Learning Approach]: https://www.bioinformaticsalgorithms.org/
 
 ## Running the solutions
 
@@ -68,3 +66,35 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 ## About
 
 * My rosalind profile: https://rosalind.info/users/danhalligan/
+
+## Locations
+
+### Python Village
+
+The "Python Village" is described as follows.
+
+> If you are completely new to programming, try these initial problems to learn
+> a few basics about the Python programming language. You'll get familiar with
+> the operations needed to start solving bioinformatics challenges in the
+> Stronghold.
+
+<details>
+<summary>Progress</summary>
+
+- [x] [INI1: Installing Python](ini1.py)
+- [x] [INI2: Variables and Some Arithmetic](ini2.py)
+- [x] [INI3: Strings and Lists](ini3.py)
+- [x] [INI4: Conditions and Loops](ini4.py)
+- [x] [INI5: Working with Files](ini5.py)
+- [x] [INI6: Dictionaries](ini6.py)
+</details>
+
+[rosalind.info]: https://rosalind.info
+[locations]: https://rosalind.info/problems/locations/
+[Python Village]: https://rosalind.info/problems/list-view/?location=python-village
+[Bioinformatics Stronghold]: https://rosalind.info/problems/list-view/
+[Algorithmic Heights]: https://rosalind.info/problems/list-view/?location=algorithmic-heights
+[Bioinformatics Armory]: https://rosalind.info/problems/list-view/?location=bioinformatics-armory
+[Bioinformatics Textbook Track]: https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track
+[Bioinformatics Algorithms: An Active Learning Approach]: https://www.bioinformaticsalgorithms.org/
+[Algorithms]: https://www.google.co.uk/books/edition/Algorithms/DJSUCgAAQBAJ?hl=en

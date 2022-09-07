@@ -5,8 +5,6 @@ from .ba6g import cycle2chromosome
 from .ba6a import format_perm
 from copy import copy
 
-# from .ba6d import find_components
-
 
 def ints(x):
     return list(map(int, x.split(", ")))
