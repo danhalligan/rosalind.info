@@ -30,8 +30,8 @@ with open(f"tests/snapshots/{location}/{code}.txt", "w") as f:
     f.write(solution)
 
 # Create template code
-print(f"Creating skeleton solution: {location}/{code}.py ...")
+print(f"Creating skeleton solution: rosalind/{location}/{code}.py ...")
 s = Template(open(str(Path(__file__).parent) + "/template.txt").read())
 o = s.substitute(code=code, title=title)
-with open(f"{location}/{code}.py", "w") as f:
+with open(f"rosalind/{location}/{code}.py", "w") as f:
     f.write(o)

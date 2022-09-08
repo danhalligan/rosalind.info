@@ -6,10 +6,11 @@ import random
 
 # Gather list of solution scripts
 locations = [
-    "algorithmic-heights",
+    "python-village",
+    "bioinformatics-stronghold",
     "bioinformatics-armory",
     "bioinformatics-textbook-track",
-    "python-village",
+    "algorithmic-heights",
 ]
 problems = []
 for location in locations:
