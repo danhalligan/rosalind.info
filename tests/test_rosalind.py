@@ -4,7 +4,6 @@ import re
 from importlib import import_module
 import random
 
-
 # Gather list of solution scripts
 locations = [
     "algorithmic-heights",
@@ -14,7 +13,7 @@ locations = [
 ]
 problems = []
 for location in locations:
-    for x in os.listdir(location):
+    for x in os.listdir("rosalind/" + location):
         if re.match("(helpers|solve).+", x):
             continue
         m = re.match(r"([^_]+)\.py$", x)

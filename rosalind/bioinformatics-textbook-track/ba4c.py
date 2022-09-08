@@ -1,10 +1,12 @@
 # Generate the Theoretical Spectrum of a Cyclic Peptide
 
 import yaml
+from importlib import resources
 
 
 def mass():
-    with open("resources/mass.yaml", "r") as stream:
+    path = resources.files("rosalind.resources").joinpath("mass.yaml")
+    with open(path) as stream:
         return yaml.safe_load(stream)
 
 

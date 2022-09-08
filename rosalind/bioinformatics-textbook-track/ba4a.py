@@ -3,10 +3,12 @@
 import yaml
 import re
 import math
+from importlib import resources
 
 
 def genetic_code():
-    with open("resources/genetic_code.yaml", "r") as stream:
+    path = resources.files("rosalind.resources").joinpath("genetic_code.yaml")
+    with open(path) as stream:
         return yaml.safe_load(stream)
 
 

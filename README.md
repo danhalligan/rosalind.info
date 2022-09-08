@@ -6,13 +6,13 @@ This repository contains solutions to bioinformatics coding challenges from
 
 * [Python Village]: initial problems to learn a few basics about the Python
   programming language.
-* [Bioinformatics Stronghold]: Problems to discover the algorithms underlying a
+* [Bioinformatics Stronghold]: problems to discover the algorithms underlying a
   variety of bioinformatics topics.
-* [Algorithmic Heights]: exercises to accompany the book [Algorithms].
 * [Bioinformatics Armory]: unlike the stronghold in the Armory we solve
-  problems using existing tools.
 * [Bioinformatics Textbook Track]: problems associated with [Bioinformatics
   Algorithms: An Active Learning Approach].
+* [Algorithmic Heights]: exercises to accompany the book [Algorithms].
+  problems using existing tools.
 
 ## Running the solutions
 
@@ -79,14 +79,14 @@ The "Python Village" is described as follows.
 > Stronghold.
 
 <details>
-<summary>Progress</summary>
+<summary>View progress & solutions</summary>
 
-- [x] [INI1: Installing Python](ini1.py)
-- [x] [INI2: Variables and Some Arithmetic](ini2.py)
-- [x] [INI3: Strings and Lists](ini3.py)
-- [x] [INI4: Conditions and Loops](ini4.py)
-- [x] [INI5: Working with Files](ini5.py)
-- [x] [INI6: Dictionaries](ini6.py)
+- [x] [INI1: Installing Python](python-village/ini1.py)
+- [x] [INI2: Variables and Some Arithmetic](python-village/ini2.py)
+- [x] [INI3: Strings and Lists](python-village/ini3.py)
+- [x] [INI4: Conditions and Loops](python-village/ini4.py)
+- [x] [INI5: Working with Files](python-village/ini5.py)
+- [x] [INI6: Dictionaries](python-village/ini6.py)
 </details>
 
 [rosalind.info]: https://rosalind.info
