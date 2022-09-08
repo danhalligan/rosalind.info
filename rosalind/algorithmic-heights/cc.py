@@ -1,7 +1,6 @@
 # Connected Components
 
 from .helpers import parse_graph
-import sys
 
 
 def find_component(node, graph):
@@ -27,7 +26,3 @@ def find_components(graph):
 def main(file):
     graph = parse_graph(open(file))
     print(len(find_components(graph)))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

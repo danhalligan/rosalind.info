@@ -4,7 +4,6 @@
 # Here though, I've implemented Moore's voting algorithm
 
 from .helpers import ints
-import sys
 
 
 def find_candidate(arr):
@@ -36,7 +35,3 @@ def main(file):
     _, *arrays = open(file).read().splitlines()
     arrays = [ints(arr) for arr in arrays]
     print(*[maj_vote(arr) for arr in arrays])
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

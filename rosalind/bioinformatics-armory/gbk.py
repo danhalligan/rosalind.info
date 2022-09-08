@@ -2,7 +2,6 @@
 
 from Bio import Entrez
 import os
-import sys
 
 
 def entrez_email():
@@ -30,7 +29,3 @@ def gbk(orgm, start, end):
 def main(file):
     orgm, start, end = open(file).read().splitlines()
     print(gbk(orgm, start, end))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

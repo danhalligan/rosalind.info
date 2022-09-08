@@ -16,7 +16,3 @@ def main(file):
             if quals[end] >= q:
                 break
         SeqIO.write(x[start : end + 1], sys.stdout, "fastq")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

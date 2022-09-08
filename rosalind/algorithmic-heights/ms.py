@@ -2,7 +2,6 @@
 
 from .mer import mer
 from .helpers import ints
-import sys
 
 
 def ms(a):
@@ -16,7 +15,3 @@ def ms(a):
 def main(file):
     n, a = open(file).read().splitlines()
     print(*ms(ints(a)))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

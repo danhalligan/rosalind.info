@@ -21,7 +21,3 @@ def main(file):
     ids = open(file).read().split()
     rcrd = frmt(ids)
     SeqIO.write(rcrd, sys.stdout, "fasta")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

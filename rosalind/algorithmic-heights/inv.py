@@ -1,7 +1,6 @@
 # Counting Inversions
 
 from .helpers import ints
-import sys
 
 
 def mer2(a1, a2):
@@ -33,7 +32,3 @@ def main(file):
     n, array = open(file).read().splitlines()
     sorted_array, count = ms2(ints(array))
     print(count)
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

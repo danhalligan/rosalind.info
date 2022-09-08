@@ -1,7 +1,6 @@
 # Testing Acyclicity
 
 from .helpers import parse_graphs
-import sys
 
 # Recursively remove leaf nodes (with no onward connections)
 # If we remove all nodes, graph must be acyclic.
@@ -33,7 +32,3 @@ def dag(graph):
 def main(file):
     gen = parse_graphs(open(file), directed=True)
     print(*[dag(graph) for graph in gen])
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

@@ -12,7 +12,3 @@ def main(file):
     records = get_records(ids)
     for rcrd in records:
         SeqIO.write(rcrd, sys.stdout, "fasta")
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

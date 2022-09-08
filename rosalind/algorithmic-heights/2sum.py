@@ -1,7 +1,6 @@
 # 2SUM
 
 from .helpers import ints
-import sys
 
 
 def two_sum(n, a):
@@ -18,7 +17,3 @@ def main(file):
     k, n = ints(info)
     for arr in arrays:
         print(*two_sum(int(n), ints(arr)))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

@@ -3,7 +3,6 @@
 # Hands down the worst code I've written in a long time.
 # TODO: refactor / rewrite!
 
-import sys
 from collections import defaultdict
 from .ba7b import limb, parse_mat
 from .ba7a import nodes
@@ -99,7 +98,3 @@ def main(file):
     graph = additive_phylogeny(parse_mat(D), int(n))
     for edge in as_edges(graph):
         print(edge)
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

@@ -1,7 +1,6 @@
 # Read Filtration by Quality
 
 from Bio import SeqIO
-import sys
 
 
 def ints(x):
@@ -17,7 +16,3 @@ def main(file):
     handle = open(file)
     q, p = ints(next(handle))
     print(sum(good_quality(q, p, x) for x in SeqIO.parse(handle, "fastq")))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

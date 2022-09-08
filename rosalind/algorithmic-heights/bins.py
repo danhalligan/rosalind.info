@@ -1,7 +1,5 @@
 # Binary Search
 
-import sys
-
 
 def bins(x, arr):
     low = 0
@@ -22,7 +20,3 @@ def main(file):
     arr = list(map(int, arr.split()))
     ints = list(map(int, ints.split()))
     print(*[bins(x, arr) for x in ints])
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

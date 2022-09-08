@@ -2,7 +2,6 @@
 
 from Bio.Seq import Seq
 import re
-import sys
 
 
 def trim_seq(x):
@@ -23,7 +22,3 @@ def main(file):
         matches = re.findall(r"M[^\*]+", x)
         best = max(matches + [best], key=len)
     print(best)
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])

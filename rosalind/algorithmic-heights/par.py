@@ -1,7 +1,6 @@
 # 2-Way Partition
 
 from .helpers import ints
-import sys
 
 
 def par(x):
@@ -17,7 +16,3 @@ def par(x):
 def main(file):
     n, x = open(file).read().splitlines()
     print(*par(ints(x)))
-
-
-if __name__ == "__main__":
-    main(sys.argv[1])
