@@ -4,10 +4,6 @@ from itertools import permutations
 from .helpers import Parser
 
 
-def perm():
-    return None
-
-
 def main(file):
     n = Parser(file).ints()[0]
     perm = list(permutations(range(1, n + 1)))

@@ -32,7 +32,7 @@ tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>
 name = "beautifulsoup4"
 version = "4.11.1"
 description = "Screen-scraping library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.0"
 
@@ -110,7 +110,7 @@ d = ["aiohttp (>=3.3.2)", "aiohttp-cors"]
 name = "bs4"
 version = "0.0.1"
 description = "Dummy package for Beautiful Soup"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -457,7 +457,7 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 name = "soupsieve"
 version = "2.3.2.post1"
 description = "A modern CSS selector implementation for Beautiful Soup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -520,6 +520,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "unittest"
+version = "0.0"
+description = ""
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "urllib3"
 version = "1.26.12"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -560,7 +568,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "1ff84eb116a505029b8e7b19f8b240c0e282afd7d31ed5be609d92f864dde06d"
+content-hash = "cee66b6e02d63053a4f1c9574ca1e293f34d691aa7432bbe7b7c33a91776b219"
 
 [metadata.files]
 appdirs = [
@@ -688,6 +696,7 @@ tqdm = []
 typed-ast = []
 typer = []
 typing-extensions = []
+unittest = []
 urllib3 = []
 virtualenv = []
 wcwidth = [
