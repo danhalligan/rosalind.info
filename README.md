@@ -30,7 +30,14 @@ poetry install
 To run solutions within this environment run, e.g.:
 
 ```{shell}
-poetry run rosalind ini2 ~/Downloads/rosalind_ini2.txt
+poetry run rosalind ini2 rosalind_ini2.txt
+```
+
+To run the solution on the provided "Sample Dataset" from [rosalind.info] (which
+should reproduce the "Sample Output"), run the solution in "test" mode:
+
+```{shell}
+poetry run rosalind --test ini2
 ```
 
 ## Testing
@@ -160,10 +167,10 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [GREP: Genome Assembly with Perfect Coverage and Repeats](rosalind/bioinformatics-stronghold/grep.py)
 - [x] [OAP: Overlap Alignment](rosalind/bioinformatics-stronghold/oap.py)
 - [x] [SIMS: Finding a Motif with Modifications](rosalind/bioinformatics-stronghold/sims.py)
+- [x] [SMGB: Semiglobal Alignment](rosalind/bioinformatics-stronghold/smgb.py)
 - [ ] NWCK: Distances in Trees
 - [ ] ITWV: Finding Disjoint Motifs in a Gene
 - [ ] MREP: Identifying Maximal Repeats
-- [ ] SMGB: Semiglobal Alignment
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments

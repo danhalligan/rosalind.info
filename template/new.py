@@ -21,7 +21,7 @@ title = soup.find("h1").get_text().splitlines()[0]
 # Create test data
 print(f"Creating sample dataset file: {location}/test/rosalind_{code}.txt ...")
 soup.find(lambda tag: tag.name == "a" and "List View" in tag.text)
-with open(f"tests/data/{location}/rosalind_{code}.txt", "w") as f:
+with open(f"rosalind/resources/test-data/{location}/rosalind_{code}.txt", "w") as f:
     f.write(problem)
 
 # Create expected solution
