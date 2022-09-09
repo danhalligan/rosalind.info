@@ -156,7 +156,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [ASMQ: Assessing Assembly Quality with N50 and N75](rosalind/bioinformatics-stronghold/asmq.py)
 - [x] [EBIN: Wright-Fisher's Expected Behavior](rosalind/bioinformatics-stronghold/ebin.py)
 - [x] [FOUN: The Founder Effect and Genetic Drift](rosalind/bioinformatics-stronghold/foun.py)
-- [ ] GAFF: Global Alignment with Scoring Matrix and Affine Gap Penalty
+- [x] [GAFF: Global Alignment with Scoring Matrix and Affine Gap Penalty](rosalind/bioinformatics-stronghold/gaff.py)
 - [x] [GREP: Genome Assembly with Perfect Coverage and Repeats](rosalind/bioinformatics-stronghold/grep.py)
 - [x] [OAP: Overlap Alignment](rosalind/bioinformatics-stronghold/oap.py)
 - [x] [SIMS: Finding a Motif with Modifications](rosalind/bioinformatics-stronghold/sims.py)
