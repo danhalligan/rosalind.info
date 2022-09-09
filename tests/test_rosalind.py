@@ -35,7 +35,7 @@ uniprot = yaml.safe_load(open("tests/uniprot_output.yaml"))
 def test_cli_function(capfd, snapshot, problem):
     path = "." + ".".join(problem)
     module = import_module(path, package="rosalind")
-    test_file = f"tests/data/{problem[0]}/rosalind_{problem[1]}.txt"
+    test_file = f"rosalind/resources/test-data/{problem[0]}/rosalind_{problem[1]}.txt"
     random.seed(42)
     with patch(
         "rosalind.bioinformatics-stronghold.mprt.uniprot_output",

@@ -103,63 +103,63 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [LGIS: Longest Increasing Subsequence](rosalind/bioinformatics-stronghold/lgis.py)
 - [x] [LONG: Genome Assembly as Shortest Superstring](rosalind/bioinformatics-stronghold/long.py)
 - [x] [PMCH: Perfect Matchings and RNA Secondary Structures](rosalind/bioinformatics-stronghold/pmch.py)
-- [ ] PPER: Partial Permutations
-- [ ] PROB: Introduction to Random Strings
-- [ ] SIGN: Enumerating Oriented Gene Orderings
-- [ ] SSEQ: Finding a Spliced Motif
-- [ ] TRAN: Transitions and Transversions
-- [ ] TREE: Completing a Tree
-- [ ] CAT: Catalan Numbers and RNA Secondary Structures
-- [ ] CORR: Error Correction in Reads
-- [ ] INOD: Counting Phylogenetic Ancestors
-- [ ] KMER: k-Mer Composition
-- [ ] KMP: Speeding Up Motif Finding
-- [ ] LCSQ: Finding a Shared Spliced Motif
-- [ ] LEXV: Ordering Strings of Varying Length Lexicographically
-- [ ] MMCH: Maximum Matchings and RNA Secondary Structures
-- [ ] PDST: Creating a Distance Matrix
-- [ ] REAR: Reversal Distance
-- [ ] RSTR: Matching Random Motifs
-- [ ] SSET: Counting Subsets
-- [ ] ASPC: Introduction to Alternative Splicing
-- [ ] EDIT: Edit Distance
-- [ ] EVAL: Expected Number of Restriction Sites
-- [ ] MOTZ: Motzkin Numbers and RNA Secondary Structures
-- [ ] SCSP: Interleaving Two Motifs
-- [ ] SETO: Introduction to Set Operations
-- [ ] SORT: Sorting by Reversals
-- [ ] SPEC: Inferring Protein from Spectrum
-- [ ] TRIE: Introduction to Pattern Matching
-- [ ] CONV: Comparing Spectra with the Spectral Convolution
-- [ ] DBRU: Constructing a De Bruijn Graph
-- [ ] EDTA: Edit Distance Alignment
-- [ ] FULL: Inferring Peptide from Full Spectrum
-- [ ] INDC: Independent Segregation of Chromosomes
-- [ ] LREP: Finding the Longest Multiple Repeat
-- [ ] RNAS: Wobble Bonding and RNA Secondary Structures
-- [ ] AFRQ: Counting Disease Carriers
-- [ ] CTEA: Counting Optimal Alignments
-- [ ] GLOB: Global Alignment with Scoring Matrix
-- [ ] PCOV: Genome Assembly with Perfect Coverage
-- [ ] PRSM: Matching a Spectrum to a Protein
-- [ ] SGRA: Using the Spectrum Graph to Infer Peptides
-- [ ] SUFF: Encoding Suffix Trees
-- [ ] GASM: Genome Assembly Using Reads
-- [ ] GCON: Global Alignment with Constant Gap Penalty
-- [ ] LING: Linguistic Complexity of a Genome
-- [ ] LOCA: Local Alignment with Scoring Matrix
-- [ ] MGAP: Maximizing the Gap Symbols of an Optimal Alignment
-- [ ] MULT: Multiple Alignment
-- [ ] PDPL: Creating a Restriction Map
-- [ ] SEXL: Sex-Linked Inheritance
-- [ ] WFMD: The Wright-Fisher Model of Genetic Drift
-- [ ] ASMQ: Assessing Assembly Quality with N50 and N75
-- [ ] EBIN: Wright-Fisher's Expected Behavior
-- [ ] FOUN: The Founder Effect and Genetic Drift
+- [x] [PPER: Partial Permutations](rosalind/bioinformatics-stronghold/pper.py)
+- [x] [PROB: Introduction to Random Strings](rosalind/bioinformatics-stronghold/prob.py)
+- [x] [SIGN: Enumerating Oriented Gene Orderings](rosalind/bioinformatics-stronghold/sign.py)
+- [x] [SSEQ: Finding a Spliced Motif](rosalind/bioinformatics-stronghold/sseq.py)
+- [x] [TRAN: Transitions and Transversions](rosalind/bioinformatics-stronghold/tran.py)
+- [x] [TREE: Completing a Tree](rosalind/bioinformatics-stronghold/tree.py)
+- [x] [CAT: Catalan Numbers and RNA Secondary Structures](rosalind/bioinformatics-stronghold/cat.py)
+- [x] [CORR: Error Correction in Reads](rosalind/bioinformatics-stronghold/corr.py)
+- [x] [INOD: Counting Phylogenetic Ancestors](rosalind/bioinformatics-stronghold/inod.py)
+- [x] [KMER: k-Mer Composition](rosalind/bioinformatics-stronghold/kmer.py)
+- [x] [KMP: Speeding Up Motif Finding](rosalind/bioinformatics-stronghold/kmp.py)
+- [x] [LCSQ: Finding a Shared Spliced Motif](rosalind/bioinformatics-stronghold/lcsq.py)
+- [x] [LEXV: Ordering Strings of Varying Length Lexicographically](rosalind/bioinformatics-stronghold/lexv.py)
+- [x] [MMCH: Maximum Matchings and RNA Secondary Structures](rosalind/bioinformatics-stronghold/mmch.py)
+- [x] [PDST: Creating a Distance Matrix](rosalind/bioinformatics-stronghold/pdst.py)
+- [x] [REAR: Reversal Distance](rosalind/bioinformatics-stronghold/rear.py)
+- [x] [RSTR: Matching Random Motifs](rosalind/bioinformatics-stronghold/rstr.py)
+- [x] [SSET: Counting Subsets](rosalind/bioinformatics-stronghold/sset.py)
+- [x] [ASPC: Introduction to Alternative Splicing](rosalind/bioinformatics-stronghold/aspc.py)
+- [x] [EDIT: Edit Distance](rosalind/bioinformatics-stronghold/edit.py)
+- [x] [EVAL: Expected Number of Restriction Sites](rosalind/bioinformatics-stronghold/eval.py)
+- [x] [MOTZ: Motzkin Numbers and RNA Secondary Structures](rosalind/bioinformatics-stronghold/motz.py)
+- [x] [SCSP: Interleaving Two Motifs](rosalind/bioinformatics-stronghold/scsp.py)
+- [x] [SETO: Introduction to Set Operations](rosalind/bioinformatics-stronghold/seto.py)
+- [x] [SORT: Sorting by Reversals](rosalind/bioinformatics-stronghold/sort.py)
+- [x] [SPEC: Inferring Protein from Spectrum](rosalind/bioinformatics-stronghold/spec.py)
+- [x] [TRIE: Introduction to Pattern Matching](rosalind/bioinformatics-stronghold/trie.py)
+- [x] [CONV: Comparing Spectra with the Spectral Convolution](rosalind/bioinformatics-stronghold/conv.py)
+- [x] [DBRU: Constructing a De Bruijn Graph](rosalind/bioinformatics-stronghold/dbru.py)
+- [x] [EDTA: Edit Distance Alignment](rosalind/bioinformatics-stronghold/edta.py)
+- [x] [FULL: Inferring Peptide from Full Spectrum](rosalind/bioinformatics-stronghold/full.py)
+- [x] [INDC: Independent Segregation of Chromosomes](rosalind/bioinformatics-stronghold/indc.py)
+- [x] [LREP: Finding the Longest Multiple Repeat](rosalind/bioinformatics-stronghold/lrep.py)
+- [x] [RNAS: Wobble Bonding and RNA Secondary Structures](rosalind/bioinformatics-stronghold/rnas.py)
+- [x] [AFRQ: Counting Disease Carriers](rosalind/bioinformatics-stronghold/afrq.py)
+- [x] [CTEA: Counting Optimal Alignments](rosalind/bioinformatics-stronghold/ctea.py)
+- [x] [GLOB: Global Alignment with Scoring Matrix](rosalind/bioinformatics-stronghold/glob.py)
+- [x] [PCOV: Genome Assembly with Perfect Coverage](rosalind/bioinformatics-stronghold/pcov.py)
+- [x] [PRSM: Matching a Spectrum to a Protein](rosalind/bioinformatics-stronghold/prsm.py)
+- [x] [SGRA: Using the Spectrum Graph to Infer Peptides](rosalind/bioinformatics-stronghold/sgra.py)
+- [x] [SUFF: Encoding Suffix Trees](rosalind/bioinformatics-stronghold/suff.py)
+- [x] [GASM: Genome Assembly Using Reads](rosalind/bioinformatics-stronghold/gasm.py)
+- [x] [GCON: Global Alignment with Constant Gap Penalty](rosalind/bioinformatics-stronghold/gcon.py)
+- [x] [LING: Linguistic Complexity of a Genome](rosalind/bioinformatics-stronghold/ling.py)
+- [x] [LOCA: Local Alignment with Scoring Matrix](rosalind/bioinformatics-stronghold/loca.py)
+- [x] [MGAP: Maximizing the Gap Symbols of an Optimal Alignment](rosalind/bioinformatics-stronghold/mgap.py)
+- [x] [MULT: Multiple Alignment](rosalind/bioinformatics-stronghold/mult.py)
+- [x] [PDPL: Creating a Restriction Map](rosalind/bioinformatics-stronghold/pdpl.py)
+- [x] [SEXL: Sex-Linked Inheritance](rosalind/bioinformatics-stronghold/sexl.py)
+- [x] [WFMD: The Wright-Fisher Model of Genetic Drift](rosalind/bioinformatics-stronghold/wfmd.py)
+- [x] [ASMQ: Assessing Assembly Quality with N50 and N75](rosalind/bioinformatics-stronghold/asmq.py)
+- [x] [EBIN: Wright-Fisher's Expected Behavior](rosalind/bioinformatics-stronghold/ebin.py)
+- [x] [FOUN: The Founder Effect and Genetic Drift](rosalind/bioinformatics-stronghold/foun.py)
 - [ ] GAFF: Global Alignment with Scoring Matrix and Affine Gap Penalty
-- [ ] GREP: Genome Assembly with Perfect Coverage and Repeats
-- [ ] OAP: Overlap Alignment
-- [ ] SIMS: Finding a Motif with Modifications
+- [x] [GREP: Genome Assembly with Perfect Coverage and Repeats](rosalind/bioinformatics-stronghold/grep.py)
+- [x] [OAP: Overlap Alignment](rosalind/bioinformatics-stronghold/oap.py)
+- [x] [SIMS: Finding a Motif with Modifications](rosalind/bioinformatics-stronghold/sims.py)
 - [ ] NWCK: Distances in Trees
 - [ ] ITWV: Finding Disjoint Motifs in a Gene
 - [ ] MREP: Identifying Maximal Repeats

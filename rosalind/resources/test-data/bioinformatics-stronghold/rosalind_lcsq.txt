@@ -1,0 +1,4 @@
+>Rosalind_23
+AACCTTGG
+>Rosalind_64
+ACACTGTGA
