@@ -294,7 +294,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA7A: Compute Distances Between Leaves](rosalind/bioinformatics-textbook-track/ba7a.py)
 - [x] [BA7B: Compute Limb Lengths in a Tree](rosalind/bioinformatics-textbook-track/ba7b.py)
 - [x] [BA7C: Implement AdditivePhylogeny](rosalind/bioinformatics-textbook-track/ba7c.py)
-- [ ] BA7D: Implement UPGMA
+- [x] [BA7D: Implement UPGMA](rosalind/bioinformatics-textbook-track/ba7d.py)
 - [ ] BA7E: Implement the Neighbor Joining Algorithm
 - [ ] BA7F: Implement SmallParsimony
 - [ ] BA7G: Adapt SmallParsimony to Unrooted Trees

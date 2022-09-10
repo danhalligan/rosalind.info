@@ -2,6 +2,7 @@
 
 from .ba7b import parse_mat
 import numpy as np
+from collections import defaultdict
 
 
 def as_edges(graph):
@@ -24,16 +25,7 @@ def closest(D):
 # the jth
 def average_ind(D, i, j, di, dj):
     D = np.copy(D)
-    av = (
-        D[
-            i,
-        ]
-        * di
-        + D[
-            j,
-        ]
-        * dj
-    ) / (di + dj)
+    av = (D[i, :] * di + D[j, :] * dj) / (di + dj)
     D[i, :] = av
     D[:, i] = av
     D = np.delete(D, j, 0)
@@ -44,17 +36,11 @@ def average_ind(D, i, j, di, dj):
 
 def upgma(D, m):
     clusters = list(range(0, m))
-    ages = {}
-    deg = {}
-    for x in clusters:
-        ages[x] = 0
-        deg[x] = 1
-    T = {}
-
-    # a label for internal nodes as we add them
-    node = m
+    ages = defaultdict(lambda: 0)  # the "age" of a node
+    size = defaultdict(lambda: 1)  # the number of descendants of a node
+    T = {}  # the graph / tree we're building
+    node = m  # a label for internal nodes as we add them
     while len(clusters) > 1:
-        # find the two closest clusters Ci and Cj
         i, j = closest(D)
         a, b = clusters[i], clusters[j]
 
@@ -62,11 +48,11 @@ def upgma(D, m):
             {"n": a, "w": D[i, j] / 2 - ages[a]},
             {"n": b, "w": D[i, j] / 2 - ages[b]},
         ]
-        deg[node] = deg[a] + deg[b]
+        size[node] = size[a] + size[b]
         ages[node] = D[i, j] / 2
         clusters[i] = node
         del clusters[j]
-        D = average_ind(D, *closest(D), deg[a], deg[b])
+        D = average_ind(D, *closest(D), size[a], size[b])
         node += 1
 
     return T
