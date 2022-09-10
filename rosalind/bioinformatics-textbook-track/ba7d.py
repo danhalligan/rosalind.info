@@ -34,12 +34,12 @@ def average_ind(D, i, j, di, dj):
     return D
 
 
-def upgma(D, m):
-    clusters = list(range(0, m))
+def upgma(D, n):
+    clusters = list(range(0, n))
     ages = defaultdict(lambda: 0)  # the "age" of a node
     size = defaultdict(lambda: 1)  # the number of descendants of a node
     T = {}  # the graph / tree we're building
-    node = m  # a label for internal nodes as we add them
+    node = n  # a label for internal nodes as we add them
     while len(clusters) > 1:
         i, j = closest(D)
         a, b = clusters[i], clusters[j]
