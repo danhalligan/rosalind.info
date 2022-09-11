@@ -4,21 +4,34 @@ from collections import defaultdict
 from math import inf
 
 
+# return all nodes of a simple graph
 def nodes(graph):
     s = list(graph.keys())
     e = [y for v in graph.values() for y in v]
     return set(s) | set(e)
 
 
+# return all leaves of a simple graph
 def leaves(graph):
     return set(y for v in list(graph.values()) for y in v if not graph[y])
 
 
-def root(graph, rev):
+# return all root node of a simple graph
+def root(graph):
+    rev = reverse_graph(graph)
     node = list(nodes(graph))[0]
-    while rev[node]:
+    while node in rev:
         node = rev[node]
     return node
+
+
+# reverse a (child points to parent)
+def reverse_graph(graph):
+    rev = {}
+    for node in nodes(graph):
+        for child in graph[node]:
+            rev[child] = node
+    return rev
 
 
 def parse_input(handle):
@@ -26,17 +39,14 @@ def parse_input(handle):
     n = int(n)
     seqs = {}
     graph = defaultdict(list)
-    rev = defaultdict(list)
     for i, edge in enumerate(range(n)):
         f, t = next(handle).rstrip().split("->")
         graph[int(f)].append(i)
-        rev[i] = int(f)
         seqs[i] = t
     for edge in handle.readlines():
         f, t = edge.rstrip().split("->")
         graph[int(f)].append(int(t))
-        rev[int(t)] = int(f)
-    return seqs, graph, rev
+    return seqs, graph
 
 
 # print (bidirectional) edges
@@ -67,7 +77,7 @@ def traceback(skp, node, ind):
     return chars
 
 
-def small_parsimony(graph, rev, chars):
+def small_parsimony(graph, chars):
     bases = ["A", "C", "T", "G"]
     sk = {}  # minimum parsimony score of the subtree over possible labels
     skp = {}  # pointer to selected base for each child over possible labels
@@ -97,14 +107,12 @@ def small_parsimony(graph, rev, chars):
                 to_process.remove(n)
 
     # Recover sequence
-    node = root(graph, rev)
+    node = root(graph)
     score = min(sk[node])
     return score, traceback(skp, node, sk[node].index(score))
 
 
-def main(file):
-    seqs, graph, rev = parse_input(open(file))
-
+def ba6f(graph, seqs):
     # initialise sequences
     for n in nodes(graph) - leaves(graph):
         seqs[n] = ""
@@ -112,10 +120,16 @@ def main(file):
     total_score = 0
     for pos in range(len(seqs[0])):
         chars = extract_position(graph, seqs, pos)
-        score, tbchars = small_parsimony(graph, rev, chars)
+        score, tbchars = small_parsimony(graph, chars)
         total_score += score
         for k, v in tbchars.items():
             seqs[k] += v
 
+    return total_score, seqs
+
+
+def main(file):
+    seqs, graph = parse_input(open(file))
+    total_score, seqs = ba6f(graph, seqs)
     print(total_score)
-    print_edges(graph, seqs, root(graph, rev))
+    print_edges(graph, seqs, root(graph))

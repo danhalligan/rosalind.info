@@ -296,8 +296,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA7C: Implement AdditivePhylogeny](rosalind/bioinformatics-textbook-track/ba7c.py)
 - [x] [BA7D: Implement UPGMA](rosalind/bioinformatics-textbook-track/ba7d.py)
 - [x] [BA7E: Implement the Neighbor Joining Algorithm](rosalind/bioinformatics-textbook-track/ba7e.py)
-- [ ] BA7F: Implement SmallParsimony
-- [ ] BA7G: Adapt SmallParsimony to Unrooted Trees
+- [x] [BA7F: Implement SmallParsimony](rosalind/bioinformatics-textbook-track/ba7f.py)
+- [x] [BA7G: Adapt SmallParsimony to Unrooted Trees](rosalind/bioinformatics-textbook-track/ba7g.py)
 - [ ] BA8A: Implement FarthestFirstTraversal
 - [ ] BA8B: Compute the Squared Error Distortion
 - [ ] BA8C: Implement the Lloyd Algorithm for k-Means Clustering
