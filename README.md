@@ -301,7 +301,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA8A: Implement FarthestFirstTraversal](rosalind/bioinformatics-textbook-track/ba8a.py)
 - [x] [BA8B: Compute the Squared Error Distortion](rosalind/bioinformatics-textbook-track/ba8ab.py)
 - [x] [BA8C: Implement the Lloyd Algorithm for k-Means Clustering](rosalind/bioinformatics-textbook-track/ba8c.py)
-- [ ] BA8D: Implement the Soft k-Means Clustering Algorithm
+- [x] [BA8D: Implement the Soft k-Means Clustering Algorithm](rosalind/bioinformatics-textbook-track/ba8d.py)
 - [ ] BA8E: Implement Hierarchical Clustering
 - [ ] BA9A: Construct a Trie from a Collection of Patterns
 - [ ] BA9B: Implement TrieMatching

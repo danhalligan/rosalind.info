@@ -1,7 +1,7 @@
 # Implement the Lloyd Algorithm for k-Means Clustering
 
+import numpy as np
 from .ba8a import read_types, euclidean_distance
-from functools import reduce
 
 
 def ncd_assignment(x, centers):
@@ -10,14 +10,9 @@ def ncd_assignment(x, centers):
     return dists.index(min(dists))
 
 
-def average_points(points):
-    points = list(points)
-    tot = reduce(lambda a, b: [a + b for a, b in zip(a, b)], points)
-    return [x / len(points) for x in tot]
-
-
 def compute_center(points, assigns, i):
-    return average_points(p for p, a in zip(points, assigns) if a == i)
+    data = [p for p, a in zip(points, assigns) if a == i]
+    return np.mean(np.array(data), 0)
 
 
 # I'm lazily avoiding checking for convergence here and hoping that 20
@@ -33,6 +28,6 @@ def k_means(points, k, iter=20):
 def main(file):
     handle = open(file)
     k, m = next(read_types(handle, int))
-    points = [point for point in read_types(handle, float)]
+    points = [np.array(point) for point in read_types(handle, float)]
     for m in k_means(points, k):
         print(*[f"{x:.3f}" for x in m])
