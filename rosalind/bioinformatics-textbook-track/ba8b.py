@@ -1,11 +1,6 @@
 # Compute the Squared Error Distortion
 
-from .ba8a import ncd
-
-
-def read_types(handle, type):
-    for line in handle:
-        yield list(map(type, line.split()))
+from .ba8a import ncd, read_types
 
 
 def distortion(points, centers):

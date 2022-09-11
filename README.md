@@ -299,8 +299,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA7F: Implement SmallParsimony](rosalind/bioinformatics-textbook-track/ba7f.py)
 - [x] [BA7G: Adapt SmallParsimony to Unrooted Trees](rosalind/bioinformatics-textbook-track/ba7g.py)
 - [x] [BA8A: Implement FarthestFirstTraversal](rosalind/bioinformatics-textbook-track/ba8a.py)
-- [ ] BA8B: Compute the Squared Error Distortion
-- [ ] BA8C: Implement the Lloyd Algorithm for k-Means Clustering
+- [x] [BA8B: Compute the Squared Error Distortion](rosalind/bioinformatics-textbook-track/ba8ab.py)
+- [x] [BA8C: Implement the Lloyd Algorithm for k-Means Clustering](rosalind/bioinformatics-textbook-track/ba8c.py)
 - [ ] BA8D: Implement the Soft k-Means Clustering Algorithm
 - [ ] BA8E: Implement Hierarchical Clustering
 - [ ] BA9A: Construct a Trie from a Collection of Patterns
