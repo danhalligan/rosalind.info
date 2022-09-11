@@ -9,11 +9,11 @@ from unittest.mock import patch
 
 # Gather list of solution scripts
 locations = [
-    "python-village",
-    "bioinformatics-stronghold",
-    "bioinformatics-armory",
-    "bioinformatics-textbook-track",
-    "algorithmic-heights",
+    "python_village",
+    "bioinformatics_stronghold",
+    "bioinformatics_armory",
+    "bioinformatics_textbook_track",
+    "algorithmic_heights",
 ]
 problems = []
 for location in locations:
@@ -38,7 +38,7 @@ def test_cli_function(capfd, snapshot, problem):
     test_file = f"rosalind/resources/test-data/{problem[0]}/rosalind_{problem[1]}.txt"
     random.seed(42)
     with patch(
-        "rosalind.bioinformatics-stronghold.mprt.uniprot_output",
+        "rosalind.bioinformatics_stronghold.mprt.uniprot_output",
         side_effect=uniprot.get,
     ):
         getattr(module, "main")(test_file)

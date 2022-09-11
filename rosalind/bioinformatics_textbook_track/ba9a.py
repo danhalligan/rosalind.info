@@ -1,14 +1,6 @@
 # Construct a Trie from a Collection of Patterns
 
-from itertools import groupby
-
-
-def trie(seqs):
-    graph = {}
-    if len(seqs):
-        for base, nseqs in groupby(sorted(seqs), key=lambda s: s[0]):
-            graph[base] = trie([seq[1:] for seq in nseqs if len(seq) > 1])
-    return graph
+from rosalind.bioinformatics_stronghold.trie import trie
 
 
 def as_adjacency(graph, nodes=[]):
