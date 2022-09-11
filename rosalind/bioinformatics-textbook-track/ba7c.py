@@ -32,7 +32,6 @@ def find_leaves(D, n):
 # path from i to k (there's only 1) and break the appropriate edge.
 def add_node(T, i, k, x, n):
     """Add node in graph D, between i and k, dist x from i, labelled n"""
-    # print(f"{i} -> {n} -> {k} at {x}")
     path = list(find_path(T, [(i, 0)], k))[0]
     for p, node in enumerate(path):
         if node[1] > x:
@@ -40,12 +39,10 @@ def add_node(T, i, k, x, n):
     p = p - 1
     i, d1 = path[p]
     k, d2 = path[p + 1]
-    # print("path", path, i, d1, d2, x)
+
     # delete edge
     T[i] = list(filter(lambda x: x["n"] != k, T[i]))
-    # print(f"Adding {i} -> {n} : {x-d1}")
     T[i].append({"n": n, "w": x - d1})
-    # print(f"Adding {n} -> {k} : {d2 - x}")
     T[n].append({"n": k, "w": d2 - x})
     return T
 
@@ -69,7 +66,6 @@ def additive_phylogeny(D, m):
 
     # remove row n and column n from D
     D = [x[:n] + x[n + 1 :] for x in D[:n] + D[n + 1 :]]
-    # print("", *D, sep = "\n")
 
     T = additive_phylogeny(D, m)
 
@@ -77,9 +73,8 @@ def additive_phylogeny(D, m):
     v = max(max(nodes(T)), m - 1) + 1
 
     # break an internal edge adding a new node (possibly)
+    # and add the new leaf node
     T = add_node(T, i, k, x, v)
-
-    # add the new leaf node
     T[v].append({"n": n, "w": limb_len})
     return T
 

@@ -298,7 +298,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA7E: Implement the Neighbor Joining Algorithm](rosalind/bioinformatics-textbook-track/ba7e.py)
 - [x] [BA7F: Implement SmallParsimony](rosalind/bioinformatics-textbook-track/ba7f.py)
 - [x] [BA7G: Adapt SmallParsimony to Unrooted Trees](rosalind/bioinformatics-textbook-track/ba7g.py)
-- [ ] BA8A: Implement FarthestFirstTraversal
+- [x] [BA8A: Implement FarthestFirstTraversal](rosalind/bioinformatics-textbook-track/ba8a.py)
 - [ ] BA8B: Compute the Squared Error Distortion
 - [ ] BA8C: Implement the Lloyd Algorithm for k-Means Clustering
 - [ ] BA8D: Implement the Soft k-Means Clustering Algorithm
