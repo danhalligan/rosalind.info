@@ -9,11 +9,11 @@ def descendants(T, node):
     q = [node]
     x = []
     while len(q):
-        nod = q.pop(0)
-        if nod in T:
-            q += T[nod]
+        n = q.pop(0)
+        if n in T:
+            q += T[n]
         else:
-            x += [nod]
+            x += [n]
     return x
 
 
@@ -27,11 +27,11 @@ def hierarchical_clustering(D, n):
         i, j = closest(D)
         a, b = clusters[i], clusters[j]
         T[node] = [a, b]
-        yield descendants(T, a) + descendants(T, b)
         size[node] = size[a] + size[b]
         D = average_ind(D, *closest(D), size[a], size[b])
         clusters[i] = node
         del clusters[j]
+        yield descendants(T, a) + descendants(T, b)
 
 
 def main(file):
