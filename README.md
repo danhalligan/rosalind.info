@@ -362,14 +362,14 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [DIJ: Dijkstra's Algorithm](rosalind/algorithmic_heights/dij.py)
 - [x] [INV: Counting Inversions](rosalind/algorithmic_heights/inv.py)
 - [x] [TS: Topological Sorting](rosalind/algorithmic_heights/ts.py)
+- [x] [BIP: Testing Bipartiteness](rosalind/algorithmic_heights/bip.py)
+- [x] [PAR3: 3-Way Partition](rosalind/algorithmic_heights/par3.py)
+- [ ] MED: Median
 - [ ] HEA: Building a Heap
-- [ ] BIP: Testing Bipartiteness
-- [ ] PAR3: 3-Way Partition
 - [ ] SQ: Square in a Graph
 - [ ] BF: Bellman-Ford Algorithm
 - [ ] CTE: Shortest Cycle Through a Given Edge
 - [ ] HS: Heap Sort
-- [ ] MED: Median
 - [ ] PS: Partial Sort
 - [ ] HDAG: Hamiltonian Path in DAG
 - [ ] NWC: Negative Weight Cycle

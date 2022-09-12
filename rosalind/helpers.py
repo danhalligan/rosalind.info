@@ -1,16 +1,6 @@
 import yaml
 from importlib import resources
-
-
-def memoize(f):
-    cache = {}
-
-    def wrapper(*args):
-        if args not in cache:
-            cache[args] = f(*args)
-        return cache[args]
-
-    return wrapper
+from functools import cache
 
 
 def resource_file(file):
@@ -28,26 +18,26 @@ def matrix_resource(file):
     return dict([x[0], dict(zip(header, map(int, x.split()[1:])))] for x in lines[1:])
 
 
-@memoize
+@cache
 def genetic_code():
     return yaml_resource("genetic_code.yaml")
 
 
-@memoize
+@cache
 def codons():
     return yaml_resource("codons.yaml")
 
 
-@memoize
+@cache
 def aa_mass():
     return yaml_resource("aa_mass.yaml")
 
 
-@memoize
+@cache
 def blosum62():
     return matrix_resource("blosum62.txt")
 
 
-@memoize
+@cache
 def pam250():
     return matrix_resource("pam250.txt")
