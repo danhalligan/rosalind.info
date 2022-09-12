@@ -321,7 +321,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] BA9P: Implement TreeColoring
 - [ ] BA9Q: Construct the Partial Suffix Array of a String
 - [ ] BA9R: Construct a Suffix Tree from a Suffix Array
-- [ ] BA10A: Compute the Probability of a Hidden Path
+- [x] [BA10A: Compute the Probability of a Hidden Path](rosalind/bioinformatics_textbook_track/ba10a.py)
 - [ ] BA10B: Compute the Probability of an Outcome Given a Hidden Path
 - [ ] BA10C: Implement the Viterbi Algorithm
 - [ ] BA10D: Compute the Probability of a String Emitted by an HMM
