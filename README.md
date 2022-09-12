@@ -364,7 +364,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [TS: Topological Sorting](rosalind/algorithmic_heights/ts.py)
 - [x] [BIP: Testing Bipartiteness](rosalind/algorithmic_heights/bip.py)
 - [x] [PAR3: 3-Way Partition](rosalind/algorithmic_heights/par3.py)
-- [ ] MED: Median
+- [x] [MED: Median](rosalind/algorithmic_heights/med.py)
 - [ ] HEA: Building a Heap
 - [ ] SQ: Square in a Graph
 - [ ] BF: Bellman-Ford Algorithm

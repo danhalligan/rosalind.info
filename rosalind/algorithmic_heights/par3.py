@@ -1,22 +1,24 @@
 # 3-Way Partition
 
 
-def par3(A):
-    start = 0
-    end = len(A) - 1
-    val = A[0]
-    i = 0
-    while i <= end:
+def par3(A, low=None, high=None):
+    if not low:
+        low = 0
+    if not high:
+        high = len(A) - 1
+    val = A[low]
+    i = low
+    while i <= high:
         if A[i] < val:
-            A[i], A[start] = A[start], A[i]
+            A[i], A[low] = A[low], A[i]
             i += 1
-            start += 1
+            low += 1
         elif A[i] > val:
-            A[i], A[end] = A[end], A[i]
-            end -= 1
+            A[i], A[high] = A[high], A[i]
+            high -= 1
         else:
             i += 1
-    return start, end
+    return low, high
 
 
 def main(file):
