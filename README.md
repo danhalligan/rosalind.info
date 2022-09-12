@@ -365,6 +365,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BIP: Testing Bipartiteness](rosalind/algorithmic_heights/bip.py)
 - [x] [PAR3: 3-Way Partition](rosalind/algorithmic_heights/par3.py)
 - [x] [MED: Median](rosalind/algorithmic_heights/med.py)
+- [x] [QS: Quick Sort](rosalind/algorithmic_heights/qs.py)
 - [ ] HEA: Building a Heap
 - [ ] SQ: Square in a Graph
 - [ ] BF: Bellman-Ford Algorithm
@@ -373,7 +374,6 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] PS: Partial Sort
 - [ ] HDAG: Hamiltonian Path in DAG
 - [ ] NWC: Negative Weight Cycle
-- [ ] QS: Quick Sort
 - [ ] SCC: Strongly Connected Components
 - [ ] 2SAT: 2-Satisfiability
 - [ ] GS: General Sink
