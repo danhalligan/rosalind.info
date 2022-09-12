@@ -3,7 +3,7 @@
 from math import prod
 
 
-def ba10a(seq, states, tmat):
+def ba10a(seq, tmat):
     return 0.5 * prod(tmat[x] for x in zip(seq, seq[1:]))
 
 
@@ -17,7 +17,7 @@ def parse_input(handle):
         for i, x in enumerate(handle.read().splitlines()[1:])
         for j, v in enumerate(x.split()[1:])
     )
-    return seq, states, tmat
+    return seq, tmat
 
 
 def main(file):
