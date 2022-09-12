@@ -302,9 +302,9 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA8B: Compute the Squared Error Distortion](rosalind/bioinformatics_textbook_track/ba8ab.py)
 - [x] [BA8C: Implement the Lloyd Algorithm for k-Means Clustering](rosalind/bioinformatics_textbook_track/ba8c.py)
 - [x] [BA8D: Implement the Soft k-Means Clustering Algorithm](rosalind/bioinformatics_textbook_track/ba8d.py)
-- [ ] BA8E: Implement Hierarchical Clustering
+- [x] [BA8E: Implement Hierarchical Clustering](rosalind/bioinformatics_textbook_track/ba8e.py)
 - [x] [BA9A: Construct a Trie from a Collection of Patterns](rosalind/bioinformatics_textbook_track/ba9a.py)
-- [ ] BA9B: Implement TrieMatching
+- [x] [BA9B: Implement TrieMatching](rosalind/bioinformatics_textbook_track/ba9b.py)
 - [x] [BA9C: Construct the Suffix Tree of a String](rosalind/bioinformatics_textbook_track/ba9c.py)
 - [ ] BA9D: Find the Longest Repeat in a String
 - [ ] BA9E: Find the Longest Substring Shared by Two Strings
