@@ -3,10 +3,6 @@
 from math import prod
 
 
-def ba10b(seq, path, tmat):
-    return prod(tmat[x] for x in zip(path, seq))
-
-
 def parse_input(handle):
     seq = next(handle).rstrip()
     next(handle)
@@ -22,6 +18,10 @@ def parse_input(handle):
         for j, v in enumerate(x.split()[1:])
     )
     return seq, path, tmat
+
+
+def ba10b(seq, path, tmat):
+    return prod(tmat[x] for x in zip(path, seq))
 
 
 def main(file):
