@@ -306,7 +306,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA9A: Construct a Trie from a Collection of Patterns](rosalind/bioinformatics_textbook_track/ba9a.py)
 - [x] [BA9B: Implement TrieMatching](rosalind/bioinformatics_textbook_track/ba9b.py)
 - [x] [BA9C: Construct the Suffix Tree of a String](rosalind/bioinformatics_textbook_track/ba9c.py)
-- [ ] BA9D: Find the Longest Repeat in a String
+- [x] [BA9D: Find the Longest Repeat in a String](rosalind/bioinformatics_textbook_track/ba9d.py)
 - [ ] BA9E: Find the Longest Substring Shared by Two Strings
 - [ ] BA9F: Find the Shortest Non-Shared Substring of Two Strings
 - [ ] BA9G: Construct the Suffix Array of a String

@@ -17,12 +17,9 @@ def prefix_trie_matching(text, graph):
 
 
 def trie_matching(text, graph):
-    i = 0
-    while text:
-        if prefix_trie_matching(text, graph):
+    for i in range(len(text)):
+        if prefix_trie_matching(text[i:], graph):
             yield i
-        text = text[1:]
-        i += 1
 
 
 def main(file):
