@@ -1,6 +1,5 @@
 # Find the Longest Repeat in a String
 
-
 from rosalind.bioinformatics_stronghold.suff import suff
 
 
