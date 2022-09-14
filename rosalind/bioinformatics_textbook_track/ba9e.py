@@ -83,9 +83,7 @@ def color_tree(tree):
 
 
 def longest_shared_substring(seq1, seq2):
-    seq1 += "$"
-    seq2 += "#"
-    tree = suff(seq1 + seq2)
+    tree = suff(seq1 + "$" + seq2 + "#")
     tree = as_graph(tree)
     colors = color_tree(tree)
     return max(purple_edges(tree, colors), key=lambda x: len(x))
