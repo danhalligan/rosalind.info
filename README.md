@@ -315,11 +315,11 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA9J: Reconstruct a String from its Burrows-Wheeler Transform](rosalind/bioinformatics_textbook_track/ba9j.py)
 - [x] [BA9K: Generate the Last-to-First Mapping of a String](rosalind/bioinformatics_textbook_track/ba9k.py)
 - [x] [BA9L: Implement BWMatching](rosalind/bioinformatics_textbook_track/ba9l.py)
-- [ ] BA9M: Implement BetterBWMatching
+- [x] [BA9M: Implement BetterBWMatching](rosalind/bioinformatics_textbook_track/ba9m.py)
 - [ ] BA9N: Find All Occurrences of a Collection of Patterns in a String
 - [ ] BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String
 - [ ] BA9P: Implement TreeColoring
-- [ ] BA9Q: Construct the Partial Suffix Array of a String
+- [x] [BA9Q: Construct the Partial Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9q.py)
 - [ ] BA9R: Construct a Suffix Tree from a Suffix Array
 - [x] [BA10A: Compute the Probability of a Hidden Path](rosalind/bioinformatics_textbook_track/ba10a.py)
 - [x] [BA10B: Compute the Probability of an Outcome Given a Hidden Path](rosalind/bioinformatics_textbook_track/ba10b.py)
