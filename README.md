@@ -313,8 +313,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA9H: Pattern Matching with the Suffix Array](rosalind/bioinformatics_textbook_track/ba9h.py)
 - [x] [BA9I: Construct the Burrows-Wheeler Transform of a String](rosalind/bioinformatics_textbook_track/ba9i.py)
 - [x] [BA9J: Reconstruct a String from its Burrows-Wheeler Transform](rosalind/bioinformatics_textbook_track/ba9j.py)
-- [ ] BA9K: Generate the Last-to-First Mapping of a String
-- [ ] BA9L: Implement BWMatching
+- [x] [BA9K: Generate the Last-to-First Mapping of a String](rosalind/bioinformatics_textbook_track/ba9k.py)
+- [x] [BA9L: Implement BWMatching](rosalind/bioinformatics_textbook_track/ba9l.py)
 - [ ] BA9M: Implement BetterBWMatching
 - [ ] BA9N: Find All Occurrences of a Collection of Patterns in a String
 - [ ] BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String
