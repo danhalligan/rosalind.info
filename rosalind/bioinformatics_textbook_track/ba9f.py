@@ -15,7 +15,7 @@
 
 
 from rosalind.bioinformatics_stronghold.suff import suff
-from .ba9e import as_graph, color_tree
+from .ba9e import as_graph, color_tree, leaf_colors
 
 
 def non_purple_edges(tree, colors):
@@ -38,7 +38,7 @@ def non_purple_edges(tree, colors):
 def shortest_nonshared_substring(seq1, seq2):
     tree = suff(seq1 + "$" + seq2 + "#")
     tree = as_graph(tree)
-    colors = color_tree(tree)
+    colors = color_tree(tree, leaf_colors(tree))
     return min(non_purple_edges(tree, colors), key=lambda x: len(x))
 
 

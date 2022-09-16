@@ -318,7 +318,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA9M: Implement BetterBWMatching](rosalind/bioinformatics_textbook_track/ba9m.py)
 - [ ] BA9N: Find All Occurrences of a Collection of Patterns in a String
 - [ ] BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String
-- [ ] BA9P: Implement TreeColoring
+- [x] [BA9P: Implement TreeColoring](rosalind/bioinformatics_textbook_track/ba9p.py)
 - [x] [BA9Q: Construct the Partial Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9q.py)
 - [ ] BA9R: Construct a Suffix Tree from a Suffix Array
 - [x] [BA10A: Compute the Probability of a Hidden Path](rosalind/bioinformatics_textbook_track/ba10a.py)

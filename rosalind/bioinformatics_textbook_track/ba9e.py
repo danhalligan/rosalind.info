@@ -49,22 +49,24 @@ def purple_edges(tree, colors):
     yield from _purple_edges(0, "")
 
 
-# Add "colours" to a paired suffix tree.
-# "red" == sequence 1 (only), ending "$"
-# "blue" == sequence 2 (only), ending "#"
-# "purple == shared.
-def color_tree(tree):
+# initialise leaves. The final nodes in our graph has no contents, but
+# here we'll set its color based on the label from the previous nodes
+# edges
+def leaf_colors(tree):
     rev = reverse_graph(tree)
-
-    # initialise leaves. The final nodes in our graph has no contents, but
-    # here we'll set its color based on the label from the previous nodes
-    # edges
     colors = defaultdict(lambda: None)
     for leaf in leaves(tree):
         edge = rev[leaf]["l"]
         m = re.search(r"([$#])", edge)
         colors[leaf] = "red" if m.group() == "$" else "blue"
+    return colors
 
+
+# Add "colours" to a paired suffix tree.
+# "red" == sequence 1 (only), ending "$"
+# "blue" == sequence 2 (only), ending "#"
+# "purple == shared.
+def color_tree(tree, colors):
     q = list(tree.keys())
     while q:
         for node in q:
@@ -85,7 +87,7 @@ def color_tree(tree):
 def longest_shared_substring(seq1, seq2):
     tree = suff(seq1 + "$" + seq2 + "#")
     tree = as_graph(tree)
-    colors = color_tree(tree)
+    colors = color_tree(tree, leaf_colors(tree))
     return max(purple_edges(tree, colors), key=lambda x: len(x))
 
 
