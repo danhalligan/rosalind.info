@@ -311,8 +311,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA9F: Find the Shortest Non-Shared Substring of Two Strings](rosalind/bioinformatics_textbook_track/ba9f.py)
 - [x] [BA9G: Construct the Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9g.py)
 - [x] [BA9H: Pattern Matching with the Suffix Array](rosalind/bioinformatics_textbook_track/ba9h.py)
-- [ ] BA9I: Construct the Burrows-Wheeler Transform of a String
-- [ ] BA9J: Reconstruct a String from its Burrows-Wheeler Transform
+- [x] [BA9I: Construct the Burrows-Wheeler Transform of a String](rosalind/bioinformatics_textbook_track/ba9i.py)
+- [x] [BA9J: Reconstruct a String from its Burrows-Wheeler Transform](rosalind/bioinformatics_textbook_track/ba9j.py)
 - [ ] BA9K: Generate the Last-to-First Mapping of a String
 - [ ] BA9L: Implement BWMatching
 - [ ] BA9M: Implement BetterBWMatching
