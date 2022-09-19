@@ -4,7 +4,7 @@ from math import log
 import numpy as np
 
 
-def parse_input(handle):
+def parse_input(handle, logp=True):
     seq = next(handle).rstrip()
     next(handle)
     alphabet = next(handle).split()
@@ -13,14 +13,14 @@ def parse_input(handle):
     next(handle)
     lines = [next(handle) for _ in range(len(states) + 1)]
     tmat = {
-        (states[i], states[j]): log(float(v))
+        (states[i], states[j]): log(float(v)) if logp else float(v)
         for i, x in enumerate(lines[1:])
         for j, v in enumerate(x.split()[1:])
     }
     next(handle)
     lines = [next(handle) for i in range(len(states) + 1)]
     emat = {
-        (states[i], alphabet[j]): log(float(v))
+        (states[i], alphabet[j]): log(float(v)) if logp else float(v)
         for i, x in enumerate(lines[1:])
         for j, v in enumerate(x.split()[1:])
     }
@@ -40,12 +40,14 @@ def viterbi(seq, states, tmat, emat):
             ptr[i, j] = p
             mat[i, j] = max(opt)
     ind = np.argmax(mat[i, :])
-    seq = states[ind]
+
+    # traceback
+    state_seq = states[ind]
     while i > 1:
-        seq = states[ptr[i, ind]] + seq
+        state_seq = states[ptr[i, ind]] + state_seq
         ind = ptr[i, ind]
         i -= 1
-    return seq
+    return state_seq
 
 
 def main(file):
