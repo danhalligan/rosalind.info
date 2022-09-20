@@ -42,10 +42,18 @@ def normalise(x):
 def print_mat(mat, rl, cl):
     print(*cl, sep="\t")
     for i, row in enumerate(mat):
-        print(f"{rl[i]}\t", end="")
-        for x in row:
-            print(f"{round(x, 3)}\t" if x > 0.0 else "0\t", end="")
-        print("\n", end="")
+        r = [rl[i]] + [round(x, 3) if x > 0.0 else "0" for x in row]
+        print(*r, sep="\t")
+
+
+def print_tprob(x):
+    n = (x.shape[0] - 3) // 3
+    print_mat(x, state_labels(n), state_labels(n))
+
+
+def print_eprob(x, alphabet):
+    n = (x.shape[0] - 3) // 3
+    print_mat(x, state_labels(n), alphabet)
 
 
 def state_labels(n):
@@ -56,13 +64,22 @@ def state_labels(n):
     return x
 
 
-def main(file):
-    θ, alphabet, alignment = parse_input(open(file))
+def transition_mat(n, nseq):
+    x = np.zeros((n * 3 + 3, n * 3 + 3), dtype=float)
+    return x
+
+
+# Initialise a emission probability matrix
+def emission_mat(n, m, nseq):
+    return np.zeros((n * 3 + 3, m), dtype=float)
+
+
+def profile_hmm(θ, alphabet, alignment):
     valid_col = np.mean(alignment == "-", axis=0) < θ
     valid_len = sum(valid_col)
     end = valid_len * 3 + 2
-    tprob = np.zeros((valid_len * 3 + 3, valid_len * 3 + 3), dtype=float)
-    eprob = np.zeros((valid_len * 3 + 3, len(alphabet)), dtype=float)
+    tprob = transition_mat(valid_len, len(alignment))
+    eprob = emission_mat(valid_len, len(alphabet), len(alignment))
 
     for seq in alignment:
         pind = 0
@@ -87,6 +104,13 @@ def main(file):
 
     tprob = normalise(tprob)
     eprob = normalise(eprob)
-    print_mat(tprob, state_labels(valid_len), state_labels(valid_len))
+
+    return tprob, eprob
+
+
+def main(file):
+    θ, alphabet, alignment = parse_input(open(file))
+    tprob, eprob = profile_hmm(θ, alphabet, alignment)
+    print_tprob(tprob)
     print("--------")
-    print_mat(eprob, state_labels(valid_len), alphabet)
+    print_eprob(eprob, alphabet)
