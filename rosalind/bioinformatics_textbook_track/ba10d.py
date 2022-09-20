@@ -8,7 +8,7 @@ def likelihood(seq, states, tmat, emat):
     mat = np.ones((len(seq) + 1, len(states)))
 
     for i, state in enumerate(states):
-        mat[0, i] = 1.0 * emat[state, seq[0]] / len(states)
+        mat[0, i] = emat[state, seq[0]] / len(states)
 
     for i, emission in enumerate(seq[1:], start=1):
         for j, state in enumerate(states):
@@ -21,5 +21,5 @@ def likelihood(seq, states, tmat, emat):
 
 
 def main(file):
-    seq, states, tmat, emat = parse_input(open(file), logp=False)
+    seq, states, tmat, emat = parse_input(open(file))
     print(likelihood(seq, states, tmat, emat))

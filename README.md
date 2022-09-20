@@ -325,7 +325,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA10B: Compute the Probability of an Outcome Given a Hidden Path](rosalind/bioinformatics_textbook_track/ba10b.py)
 - [x] [BA10C: Implement the Viterbi Algorithm](rosalind/bioinformatics_textbook_track/ba10c.py)
 - [x] [BA10D: Compute the Probability of a String Emitted by an HMM](rosalind/bioinformatics_textbook_track/ba10d.py)
-- [ ] BA10E: Construct a Profile HMM
+- [x] [BA10E: Construct a Profile HMM](rosalind/bioinformatics_textbook_track/ba10e.py)
 - [ ] BA10F: Construct a Profile HMM with Pseudocounts
 - [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
 - [ ] BA10H: Estimate the Parameters of an HMM
