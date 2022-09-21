@@ -366,7 +366,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [PAR3: 3-Way Partition](rosalind/algorithmic_heights/par3.py)
 - [x] [MED: Median](rosalind/algorithmic_heights/med.py)
 - [x] [QS: Quick Sort](rosalind/algorithmic_heights/qs.py)
-- [ ] HEA: Building a Heap
+- [x] [HEA: Building a Heap](rosalind/algorithmic_heights/hea.py)
 - [ ] SQ: Square in a Graph
 - [ ] BF: Bellman-Ford Algorithm
 - [ ] CTE: Shortest Cycle Through a Given Edge
