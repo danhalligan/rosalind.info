@@ -332,7 +332,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] BA10I: Implement Viterbi Learning
 - [ ] BA10J: Solve the Soft Decoding Problem
 - [ ] BA10K: Implement Baum-Welch Learning
-- [ ] BA11A: Construct the Graph of a Spectrum
+- [x] [BA11A: Construct the Graph of a Spectrum](rosalind/bioinformatics_textbook_track/ba11a.py)
 - [ ] BA11B: Implement DecodingIdealSpectrum
 - [ ] BA11C: Convert a Peptide into a Peptide Vector
 - [ ] BA11D: Convert a Peptide Vector into a Peptide
