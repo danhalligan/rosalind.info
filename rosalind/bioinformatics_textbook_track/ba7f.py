@@ -25,10 +25,10 @@ def root(graph):
     return node
 
 
-# reverse a (child points to parent)
+# reverse a simple graph (child points to parent)
 def reverse_graph(graph):
     rev = {}
-    for node in nodes(graph):
+    for node in graph:
         for child in graph[node]:
             rev[child] = node
     return rev

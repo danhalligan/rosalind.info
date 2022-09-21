@@ -374,7 +374,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] PS: Partial Sort
 - [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)
 - [ ] NWC: Negative Weight Cycle
-- [ ] SCC: Strongly Connected Components
+- [x] [SCC: Strongly Connected Components](rosalind/algorithmic_heights/scc.py)
 - [ ] 2SAT: 2-Satisfiability
 - [ ] GS: General Sink
 - [ ] SC: Semi-Connected Graph

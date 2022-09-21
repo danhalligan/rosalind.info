@@ -34,8 +34,6 @@ def reverse_graph(graph):
     return rev
 
 
-# We'll do DFS over tree, ending iteration in the node above a leaf
-# By doing this, edges returned are shared and therefore repeats
 def purple_edges(tree, colors):
     def _purple_edges(node, seq):
         if colors[node] == "purple":
