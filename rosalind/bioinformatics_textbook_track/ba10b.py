@@ -12,11 +12,11 @@ def parse_input(handle):
     next(handle)
     states = next(handle).split()
     next(handle)
-    tmat = dict(
-        ((states[i], alphabet[j]), float(v))
+    tmat = {
+        (states[i], alphabet[j]): float(v)
         for i, x in enumerate(handle.read().splitlines()[1:])
         for j, v in enumerate(x.split()[1:])
-    )
+    }
     return seq, path, tmat
 
 

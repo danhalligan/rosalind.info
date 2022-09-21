@@ -326,7 +326,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA10C: Implement the Viterbi Algorithm](rosalind/bioinformatics_textbook_track/ba10c.py)
 - [x] [BA10D: Compute the Probability of a String Emitted by an HMM](rosalind/bioinformatics_textbook_track/ba10d.py)
 - [x] [BA10E: Construct a Profile HMM](rosalind/bioinformatics_textbook_track/ba10e.py)
-- [ ] BA10F: Construct a Profile HMM with Pseudocounts
+- [x] [BA10F: Construct a Profile HMM with Pseudocounts](rosalind/bioinformatics_textbook_track/ba10f.py)
 - [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
 - [ ] BA10H: Estimate the Parameters of an HMM
 - [ ] BA10I: Implement Viterbi Learning
@@ -372,7 +372,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] CTE: Shortest Cycle Through a Given Edge
 - [ ] HS: Heap Sort
 - [ ] PS: Partial Sort
-- [ ] HDAG: Hamiltonian Path in DAG
+- [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)
 - [ ] NWC: Negative Weight Cycle
 - [ ] SCC: Strongly Connected Components
 - [ ] 2SAT: 2-Satisfiability

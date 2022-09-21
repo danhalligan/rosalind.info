@@ -64,13 +64,13 @@ def state_labels(n):
     return x
 
 
-def transition_mat(n, nseq):
+def transition_mat(n):
     x = np.zeros((n * 3 + 3, n * 3 + 3), dtype=float)
     return x
 
 
 # Initialise a emission probability matrix
-def emission_mat(n, m, nseq):
+def emission_mat(n, m):
     return np.zeros((n * 3 + 3, m), dtype=float)
 
 
@@ -78,8 +78,8 @@ def profile_hmm(θ, alphabet, alignment):
     valid_col = np.mean(alignment == "-", axis=0) < θ
     valid_len = sum(valid_col)
     end = valid_len * 3 + 2
-    tprob = transition_mat(valid_len, len(alignment))
-    eprob = emission_mat(valid_len, len(alphabet), len(alignment))
+    tprob = transition_mat(valid_len)
+    eprob = emission_mat(valid_len, len(alphabet))
 
     for seq in alignment:
         pind = 0
