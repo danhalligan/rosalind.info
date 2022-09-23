@@ -1,6 +1,6 @@
 # Convert a Peptide Vector into a Peptide
 
-from .ba11c import modified_mass
+from .ba11c import masses
 
 
 def peptide_mass(peptide, masses):
@@ -20,4 +20,4 @@ def vector2peptide(vector, masses):
 
 def main(file):
     vector = list(map(int, open(file).read().split()))
-    print(vector2peptide(vector, modified_mass()))
+    print(vector2peptide(vector, masses()))

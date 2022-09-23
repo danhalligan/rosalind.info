@@ -42,6 +42,7 @@ def solve(
     """Solve a given Rosalind problem"""
     loc = str(find_location(problem))
     if test:
+        os.environ["ROSALIND_TEST"] = "1"
         path = test_file(problem)
     if not path:
         print("An input file is required if not in test mode!")

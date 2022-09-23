@@ -337,8 +337,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA11C: Convert a Peptide into a Peptide Vector](rosalind/bioinformatics_textbook_track/ba11c.py)
 - [x] [BA11D: Convert a Peptide Vector into a Peptide](rosalind/bioinformatics_textbook_track/ba11d.py)
 - [x] [BA11E: Sequence a Peptide](rosalind/bioinformatics_textbook_track/ba11e.py)
-- [ ] BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum
-- [ ] BA11G: Implement PSMSearch
+- [x] [BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum](rosalind/bioinformatics_textbook_track/ba11f.py)
+- [x] [BA11G: Implement PSMSearch](rosalind/bioinformatics_textbook_track/ba11g.py)
 - [ ] BA11H: Compute the Size of a Spectral Dictionary
 - [ ] BA11I: Compute the Probability of a Spectral Dictionary
 - [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum

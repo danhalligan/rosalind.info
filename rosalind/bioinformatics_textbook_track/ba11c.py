@@ -1,14 +1,15 @@
 # Convert a Peptide into a Peptide Vector
 
+import os
 from .ba4c import mass
 
 
-# add fake masses for tests.
-def modified_mass():
+# masses with fake masses for tests if we're in test mode
+def masses():
     masses = mass()
-    # add fake masses for tests.
-    masses["X"] = 4
-    masses["Z"] = 5
+    if "ROSALIND_TEST" in os.environ:
+        masses["X"] = 4
+        masses["Z"] = 5
     return masses
 
 
@@ -25,4 +26,4 @@ def peptide2vector(peptide, masses):
 
 def main(file):
     peptide = open(file).read().rstrip()
-    print(*peptide2vector(peptide, modified_mass()))
+    print(*peptide2vector(peptide, masses()))

@@ -2,9 +2,7 @@
 
 from collections import defaultdict
 from .ba11d import prefixes2peptide
-
-# from .ba11c import modified_mass
-from .ba4c import mass
+from .ba11c import masses
 from .ba7a import nodes
 from math import inf
 
@@ -37,8 +35,7 @@ def build_dag(v, masses):
 
 
 def main(file):
-    # m = modified_mass()
-    m = mass()
+    m = masses()
     vector = list(map(int, open(file).read().split()))
     dag = build_dag(vector, m)
     _, path = bf(0, dag)
