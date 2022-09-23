@@ -40,7 +40,7 @@ def dij(start, graph):
     return d
 
 
-def parse_weighed_graph(edges):
+def parse_weighted_graph(edges):
     graph = defaultdict(list)
 
     for edge in edges:
@@ -53,6 +53,6 @@ def parse_weighed_graph(edges):
 def main(file):
     n_leaves, *edges = open(file).read().splitlines()
     n_leaves = int(n_leaves)
-    graph = parse_weighed_graph(edges)
+    graph = parse_weighted_graph(edges)
     for i in range(n_leaves):
         print(*dij(i, graph)[:n_leaves])

@@ -333,10 +333,10 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] BA10J: Solve the Soft Decoding Problem
 - [ ] BA10K: Implement Baum-Welch Learning
 - [x] [BA11A: Construct the Graph of a Spectrum](rosalind/bioinformatics_textbook_track/ba11a.py)
-- [ ] BA11B: Implement DecodingIdealSpectrum
-- [ ] BA11C: Convert a Peptide into a Peptide Vector
-- [ ] BA11D: Convert a Peptide Vector into a Peptide
-- [ ] BA11E: Sequence a Peptide
+- [x] [BA11B: Implement DecodingIdealSpectrum](rosalind/bioinformatics_textbook_track/ba11b.py)
+- [x] [BA11C: Convert a Peptide into a Peptide Vector](rosalind/bioinformatics_textbook_track/ba11c.py)
+- [x] [BA11D: Convert a Peptide Vector into a Peptide](rosalind/bioinformatics_textbook_track/ba11d.py)
+- [x] [BA11E: Sequence a Peptide](rosalind/bioinformatics_textbook_track/ba11e.py)
 - [ ] BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum
 - [ ] BA11G: Implement PSMSearch
 - [ ] BA11H: Compute the Size of a Spectral Dictionary
@@ -368,7 +368,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [QS: Quick Sort](rosalind/algorithmic_heights/qs.py)
 - [x] [HEA: Building a Heap](rosalind/algorithmic_heights/hea.py)
 - [ ] SQ: Square in a Graph
-- [ ] BF: Bellman-Ford Algorithm
+- [x] [BF: Bellman-Ford Algorithm](rosalind/algorithmic_heights/bf.py)
 - [ ] CTE: Shortest Cycle Through a Given Edge
 - [ ] HS: Heap Sort
 - [ ] PS: Partial Sort

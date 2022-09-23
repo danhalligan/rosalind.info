@@ -1,6 +1,6 @@
 # Dijkstra's Algorithm
 
-from .helpers import parse_weighed_graph
+from .helpers import parse_weighted_graph
 
 from math import inf
 from heapq import heappush, heappop
@@ -25,5 +25,5 @@ def dij(graph):
 
 
 def main(file):
-    graph = parse_weighed_graph(file)
+    graph = parse_weighted_graph(open(file))
     print(*dij(graph))

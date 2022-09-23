@@ -20,8 +20,8 @@ def parse_graph(handle, directed=False):
     return graph
 
 
-def parse_weighed_graph(file):
-    info, *edges = open(file).read().splitlines()
+def parse_weighted_graph(handle):
+    info, *edges = handle.read().splitlines()
     nodes, n_edges = ints(info)
     graph = {}
 
