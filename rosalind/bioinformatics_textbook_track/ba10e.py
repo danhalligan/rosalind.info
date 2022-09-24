@@ -31,7 +31,7 @@ def rownorm(x, inc_zeros=False):
         x[:] = 1
     with np.errstate(divide="ignore", invalid="ignore"):
         new = x / sum(x)
-        new[x == 0.0] = 0.0
+        new[x == 0.0] = 1e-16
         return new
 
 

@@ -329,7 +329,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA10F: Construct a Profile HMM with Pseudocounts](rosalind/bioinformatics_textbook_track/ba10f.py)
 - [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
 - [x] [BA10H: Estimate the Parameters of an HMM](rosalind/bioinformatics_textbook_track/ba10h.py)
-- [ ] BA10I: Implement Viterbi Learning
+- [x] [BA10I: Implement Viterbi Learning](rosalind/bioinformatics_textbook_track/ba10i.py)
 - [ ] BA10J: Solve the Soft Decoding Problem
 - [ ] BA10K: Implement Baum-Welch Learning
 - [x] [BA11A: Construct the Graph of a Spectrum](rosalind/bioinformatics_textbook_track/ba11a.py)
