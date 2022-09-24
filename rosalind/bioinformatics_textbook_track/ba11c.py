@@ -6,11 +6,10 @@ from .ba4c import mass
 
 # masses with fake masses for tests if we're in test mode
 def masses():
-    masses = mass()
     if "ROSALIND_TEST" in os.environ:
-        masses["X"] = 4
-        masses["Z"] = 5
-    return masses
+        return {"X": 4, "Z": 5}
+    else:
+        return mass()
 
 
 def peptide_mass(peptide, masses):

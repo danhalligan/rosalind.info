@@ -340,7 +340,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA11F: Find a Highest-Scoring Peptide in a Proteome against a Spectrum](rosalind/bioinformatics_textbook_track/ba11f.py)
 - [x] [BA11G: Implement PSMSearch](rosalind/bioinformatics_textbook_track/ba11g.py)
 - [x] [BA11H: Compute the Size of a Spectral Dictionary](rosalind/bioinformatics_textbook_track/ba11h.py)
-- [ ] BA11I: Compute the Probability of a Spectral Dictionary
+- [x] [BA11I: Compute the Probability of a Spectral Dictionary](rosalind/bioinformatics_textbook_track/ba11i.py)
 - [ ] BA11J: Find a Highest-Scoring Modified Peptide against a Spectrum
 
 ### Algorithmic Heights
