@@ -13,5 +13,5 @@ def ms(a):
 
 
 def main(file):
-    n, a = open(file).read().splitlines()
+    _, a = open(file).read().splitlines()
     print(*ms(ints(a)))

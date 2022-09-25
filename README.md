@@ -370,8 +370,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] SQ: Square in a Graph
 - [x] [BF: Bellman-Ford Algorithm](rosalind/algorithmic_heights/bf.py)
 - [x] [CTE: Shortest Cycle Through a Given Edge](rosalind/algorithmic_heights/cte.py)
-- [ ] HS: Heap Sort
-- [ ] PS: Partial Sort
+- [x] [HS: Heap Sort](rosalind/algorithmic_heights/hs.py)
+- [x] [PS: Partial Sort](rosalind/algorithmic_heights/ps.py)
 - [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)
 - [ ] NWC: Negative Weight Cycle
 - [x] [SCC: Strongly Connected Components](rosalind/algorithmic_heights/scc.py)

@@ -29,6 +29,6 @@ def ms2(a):
 
 
 def main(file):
-    n, array = open(file).read().splitlines()
-    sorted_array, count = ms2(ints(array))
+    _, array = open(file).read().splitlines()
+    _, count = ms2(ints(array))
     print(count)

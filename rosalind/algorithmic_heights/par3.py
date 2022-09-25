@@ -1,5 +1,7 @@
 # 3-Way Partition
 
+from .helpers import ints
+
 
 def par3(A, low=None, high=None):
     if not low:
@@ -24,6 +26,6 @@ def par3(A, low=None, high=None):
 def main(file):
     handle = open(file)
     next(handle)
-    A = list(map(int, next(handle).split()))
+    A = ints(next(handle))
     par3(A)
     print(*A)

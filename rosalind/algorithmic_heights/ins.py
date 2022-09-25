@@ -18,5 +18,5 @@ def insertion_sort(x):
 
 
 def main(file):
-    n, x = open(file).read().splitlines()
+    _, x = open(file).read().splitlines()
     print(insertion_sort(ints(x)))

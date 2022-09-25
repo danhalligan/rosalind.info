@@ -1,5 +1,6 @@
 # Median
 
+from .helpers import ints
 from .par3 import par3
 
 
@@ -20,6 +21,6 @@ def med(A, k):
 def main(file):
     handle = open(file)
     _ = next(handle)
-    A = list(map(int, next(handle).split()))
+    A = ints(next(handle))
     k = int(next(handle))
     print(med(A, k - 1))

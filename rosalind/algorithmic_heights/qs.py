@@ -1,5 +1,6 @@
 # Quick Sort
 
+from .helpers import ints
 from .par3 import par3
 
 
@@ -18,6 +19,6 @@ def qs(A):
 def main(file):
     handle = open(file)
     _ = next(handle)
-    A = list(map(int, next(handle).split()))
+    A = ints(next(handle))
     qs(A)
     print(*A)

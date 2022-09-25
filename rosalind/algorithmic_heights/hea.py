@@ -1,5 +1,7 @@
 # Building a Heap
 
+from .helpers import ints
+
 
 def heapify(heap, i):
     if i == 0:
@@ -13,11 +15,14 @@ def heapify(heap, i):
         heapify(heap, parent)
 
 
-def main(file):
-    n, arr = open(file).read().splitlines()
-    arr = list(map(int, arr.split()))
+def heap(arr):
     heap = []
     for i, x in enumerate(arr):
         heap.append(x)
         heapify(heap, i)
-    print(*heap)
+    return heap
+
+
+def main(file):
+    _, arr = open(file).read().splitlines()
+    print(*heap(ints(arr)))

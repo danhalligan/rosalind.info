@@ -11,5 +11,5 @@ def mer(a1, a2):
 
 
 def main(file):
-    n, a1, m, a2 = open(file).read().splitlines()
+    _, a1, _, a2 = open(file).read().splitlines()
     print(*mer(ints(a1), ints(a2)))

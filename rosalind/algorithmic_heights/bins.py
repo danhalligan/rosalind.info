@@ -1,5 +1,7 @@
 # Binary Search
 
+from .helpers import ints
+
 
 def bins(x, arr):
     low = 0
@@ -16,7 +18,7 @@ def bins(x, arr):
 
 
 def main(file):
-    n, m, arr, ints = open(file).read().splitlines()
-    arr = list(map(int, arr.split()))
-    ints = list(map(int, ints.split()))
-    print(*[bins(x, arr) for x in ints])
+    _, _, arr, m = open(file).read().splitlines()
+    arr = ints(arr)
+    m = ints(m)
+    print(*[bins(x, arr) for x in m])

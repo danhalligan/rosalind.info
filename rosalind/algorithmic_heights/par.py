@@ -14,5 +14,5 @@ def par(x):
 
 
 def main(file):
-    n, x = open(file).read().splitlines()
+    _, x = open(file).read().splitlines()
     print(*par(ints(x)))
