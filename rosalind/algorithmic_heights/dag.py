@@ -17,7 +17,7 @@ def graph_nodes(graph):
 def remove_leaves(graph):
     nodes = graph_nodes(graph)
     leaves = nodes - graph.keys()
-    return dict((n, v - leaves) for n, v in graph.items() if len(v - leaves))
+    return {n: set(v) - leaves for n, v in graph.items() if len(set(v) - leaves)}
 
 
 def dag(graph):

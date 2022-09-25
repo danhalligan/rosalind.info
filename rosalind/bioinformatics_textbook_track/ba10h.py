@@ -28,7 +28,7 @@ def estimate_tmat(path, states, to_dict=False):
     tmat = np.zeros((len(states), len(states)), dtype=float)
     for a, b in zip(path, path[1:]):
         tmat[states.index(a)][states.index(b)] += 1
-    tmat = normalise(tmat, inc_zeros=True)
+    tmat = normalise(tmat, inc_zeros=True, min_val=1e-16)
     if to_dict:
         return as_dict(tmat, states, states)
     else:
@@ -39,7 +39,7 @@ def estimate_emat(seq, alphabet, path, states, to_dict=False):
     emat = np.zeros((len(states), len(alphabet)), dtype=float)
     for a, b in zip(path, seq):
         emat[states.index(a)][alphabet.index(b)] += 1
-    emat = normalise(emat, inc_zeros=True)
+    emat = normalise(emat, inc_zeros=True, min_val=1e-16)
     if to_dict:
         return as_dict(emat, states, alphabet)
     else:

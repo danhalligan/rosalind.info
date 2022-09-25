@@ -33,6 +33,7 @@ uniprot = yaml.safe_load(open("tests/uniprot_output.yaml"))
 # matches the downloaded Sample Output / "expected" version
 @pytest.mark.parametrize("problem", problems)
 def test_cli_function(capfd, snapshot, problem):
+    os.environ["ROSALIND_TEST"] = "1"
     path = "." + ".".join(problem)
     module = import_module(path, package="rosalind")
     test_file = f"rosalind/resources/test-data/{problem[0]}/rosalind_{problem[1]}.txt"

@@ -17,5 +17,5 @@ def full(ions):
 
 def main(file):
     x = [0] + list(map(int, open(file).read().split()))
-    for spec in full(x):
-        print(spec)
+    specs = list(full(x))
+    print(specs[0])

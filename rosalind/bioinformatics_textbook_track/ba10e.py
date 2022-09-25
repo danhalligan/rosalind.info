@@ -26,17 +26,17 @@ def index(i, type):
 
 # There must be an easier way, but this divides rows by rowMax
 # ignore zeros in the row, or when the rowsum is zero.
-def rownorm(x, inc_zeros=False):
+def rownorm(x, inc_zeros=False, min_val=0.0):
     if inc_zeros and sum(x) == 0:
         x[:] = 1
     with np.errstate(divide="ignore", invalid="ignore"):
         new = x / sum(x)
-        new[x == 0.0] = 1e-16
+        new[x == 0.0] = min_val
         return new
 
 
-def normalise(x, inc_zeros=False):
-    return np.array([rownorm(r, inc_zeros=inc_zeros) for r in x])
+def normalise(x, inc_zeros=False, min_val=0.0):
+    return np.array([rownorm(r, inc_zeros=inc_zeros, min_val=min_val) for r in x])
 
 
 # This problem is very fussy about formatting.
