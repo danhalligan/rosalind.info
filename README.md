@@ -369,7 +369,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [HEA: Building a Heap](rosalind/algorithmic_heights/hea.py)
 - [ ] SQ: Square in a Graph
 - [x] [BF: Bellman-Ford Algorithm](rosalind/algorithmic_heights/bf.py)
-- [ ] CTE: Shortest Cycle Through a Given Edge
+- [x] [CTE: Shortest Cycle Through a Given Edge](rosalind/algorithmic_heights/cte.py)
 - [ ] HS: Heap Sort
 - [ ] PS: Partial Sort
 - [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)

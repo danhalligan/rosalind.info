@@ -1,6 +1,6 @@
 # Bellman-Ford Algorithm
 
-from .helpers import parse_weighted_graph
+from .helpers import parse_graph
 from math import inf, isinf
 
 
@@ -23,4 +23,4 @@ def bf(graph, start=1):
 
 
 def main(file):
-    print(*bf(parse_weighted_graph(open(file))))
+    print(*bf(parse_graph(open(file), directed=True, weighted=True)))

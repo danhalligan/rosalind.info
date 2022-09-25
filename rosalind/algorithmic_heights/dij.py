@@ -1,16 +1,16 @@
 # Dijkstra's Algorithm
 
-from .helpers import parse_weighted_graph
+from .helpers import parse_graph
 
 from math import inf
 from heapq import heappush, heappop
 
 
-def dij(graph):
+def dij(graph, start=1):
     d = [inf for i in range(len(graph) + 1)]
-    d[1] = 0
+    d[start] = 0
     q = []
-    heappush(q, (0, 1))
+    heappush(q, (0, start))
     processed = set()
 
     while q:
@@ -25,5 +25,5 @@ def dij(graph):
 
 
 def main(file):
-    graph = parse_weighted_graph(open(file))
+    graph = parse_graph(open(file), directed=True, weighted=True)
     print(*dij(graph))
