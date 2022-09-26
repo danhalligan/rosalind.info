@@ -7,7 +7,7 @@ def parse_graph(handle, directed=False, weighted=False):
     if info == "\n":
         info = next(handle)
     nodes, n_edges = ints(info)
-    edges = [next(handle) for i in range(n_edges)]
+    edges = [next(handle) for _ in range(n_edges)]
     graph = {}
 
     for n in range(1, nodes + 1):
@@ -18,7 +18,6 @@ def parse_graph(handle, directed=False, weighted=False):
             f, t, w = ints(edge)
             graph[f].append({"n": t, "w": w})
             if not directed:
-                print("HERE")
                 graph[t].append({"n": f, "w": w})
         else:
             f, t = ints(edge)
@@ -31,5 +30,5 @@ def parse_graph(handle, directed=False, weighted=False):
 
 def parse_graphs(handle, directed=False, weighted=False):
     n = int(next(handle))
-    for i in range(n):
+    for _ in range(n):
         yield parse_graph(handle, directed=directed, weighted=weighted)

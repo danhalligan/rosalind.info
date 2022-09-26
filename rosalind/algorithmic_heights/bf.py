@@ -4,6 +4,14 @@ from .helpers import parse_graph
 from math import inf, isinf
 
 
+def nedges(graph):
+    count = 0
+    for _, outs in graph.items():
+        for _ in outs:
+            count += 1
+    return count
+
+
 def nodes(graph):
     s = list(graph.keys())
     e = [y["n"] for v in graph.values() for y in v]
@@ -13,8 +21,7 @@ def nodes(graph):
 def bf(graph, start=1):
     d = {n: inf for n in nodes(graph)}
     d[start] = 0
-    n = nodes(graph)
-    for _ in range(len(n) - 1):
+    for _ in range(nedges(graph) - 1):
         for u, x in graph.items():
             for v in x:
                 if d[u] + v["w"] < d[v["n"]]:

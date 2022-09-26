@@ -330,7 +330,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
 - [x] [BA10H: Estimate the Parameters of an HMM](rosalind/bioinformatics_textbook_track/ba10h.py)
 - [x] [BA10I: Implement Viterbi Learning](rosalind/bioinformatics_textbook_track/ba10i.py)
-- [ ] BA10J: Solve the Soft Decoding Problem
+- [x] [BA10J: Solve the Soft Decoding Problem](rosalind/bioinformatics_textbook_track/ba10j.py)
 - [ ] BA10K: Implement Baum-Welch Learning
 - [x] [BA11A: Construct the Graph of a Spectrum](rosalind/bioinformatics_textbook_track/ba11a.py)
 - [x] [BA11B: Implement DecodingIdealSpectrum](rosalind/bioinformatics_textbook_track/ba11b.py)
@@ -373,7 +373,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [HS: Heap Sort](rosalind/algorithmic_heights/hs.py)
 - [x] [PS: Partial Sort](rosalind/algorithmic_heights/ps.py)
 - [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)
-- [ ] NWC: Negative Weight Cycle
+- [x] [NWC: Negative Weight Cycle](rosalind/algorithmic_heights/nwc.py)
 - [x] [SCC: Strongly Connected Components](rosalind/algorithmic_heights/scc.py)
 - [ ] 2SAT: 2-Satisfiability
 - [ ] GS: General Sink
