@@ -331,7 +331,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [BA10H: Estimate the Parameters of an HMM](rosalind/bioinformatics_textbook_track/ba10h.py)
 - [x] [BA10I: Implement Viterbi Learning](rosalind/bioinformatics_textbook_track/ba10i.py)
 - [x] [BA10J: Solve the Soft Decoding Problem](rosalind/bioinformatics_textbook_track/ba10j.py)
-- [ ] BA10K: Implement Baum-Welch Learning
+- [x] [BA10K: Implement Baum-Welch Learning](rosalind/bioinformatics_textbook_track/ba10j.py)
 - [x] [BA11A: Construct the Graph of a Spectrum](rosalind/bioinformatics_textbook_track/ba11a.py)
 - [x] [BA11B: Implement DecodingIdealSpectrum](rosalind/bioinformatics_textbook_track/ba11b.py)
 - [x] [BA11C: Convert a Peptide into a Peptide Vector](rosalind/bioinformatics_textbook_track/ba11c.py)

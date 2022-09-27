@@ -1,8 +1,17 @@
 # Implement Viterbi Learning
 
+import numpy as np
 from .ba10c import viterbi
 from .ba10e import print_mat
 from .ba10h import estimate_tmat, estimate_emat
+
+
+def print_dict(d, rl, cl):
+    mat = np.zeros((len(rl), len(cl)), dtype=float)
+    for i, r in enumerate(rl):
+        for j, c in enumerate(cl):
+            mat[i, j] = d[r, c]
+    print_mat(mat, rl, cl)
 
 
 def parse_input(handle):
@@ -36,6 +45,6 @@ def main(file):
         path = viterbi(seq, st, tmat, emat)
         tmat = estimate_tmat(path, st, to_dict=True)
         emat = estimate_emat(seq, al, path, st, to_dict=True)
-    print_mat(estimate_tmat(path, st), st, st)
+    print_dict(tmat, st, st)
     print("--------")
-    print_mat(estimate_emat(seq, al, path, st), st, al)
+    print_dict(emat, st, al)
