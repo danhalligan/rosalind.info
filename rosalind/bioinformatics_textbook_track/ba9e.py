@@ -47,7 +47,7 @@ def purple_edges(tree, colors):
     yield from _purple_edges(0, "")
 
 
-# initialise leaves. The final nodes in our graph has no contents, but
+# initialise leaves. The final nodes in our graph have no contents, but
 # here we'll set its color based on the label from the previous nodes
 # edges
 def leaf_colors(tree):
