@@ -42,7 +42,6 @@ def parse_newick(newick):
     i = len(tokens) - 1
     while i >= 0:
         if tokens[i] == "(":
-            g[node_stack[-1]].append({"n": node_stack[-2], "w": 1})
             node_stack = node_stack[:-1]
         elif tokens[i] == ")":
             if i + 1 < len(tokens) and tokens[i + 1] not in ",)":
@@ -50,8 +49,9 @@ def parse_newick(newick):
             else:
                 count += 1
                 node = str(count)
+            g[node_stack[-1]].append({"n": node, "w": 1})
+            g[node].append({"n": node_stack[-1], "w": 1})
             node_stack += [node]
-            g[node_stack[-2]].append({"n": node_stack[-1], "w": 1})
         elif tokens[i] != "," and (i == 0 or tokens[i - 1] != ")"):
             if tokens[i] == ".":
                 count += 1

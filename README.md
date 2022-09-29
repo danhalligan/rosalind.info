@@ -170,12 +170,12 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [SMGB: Semiglobal Alignment](rosalind/bioinformatics_stronghold/smgb.py)
 - [x] [MREP: Identifying Maximal Repeats](rosalind/bioinformatics_stronghold/mrep.py)
 - [x] [NWCK: Distances in Trees](rosalind/bioinformatics_stronghold/nwck.py)
+- [x] [NKEW: Newick Format with Edge Weights](rosalind/bioinformatics_stronghold/nkew.py)
 - [ ] ITWV: Finding Disjoint Motifs in a Gene
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
 - [ ] CTBL: Creating a Character Table
-- [ ] NKEW: Newick Format with Edge Weights
 - [ ] CSTR: Creating a Character Table from Genetic Strings
 - [ ] CUNR: Counting Unrooted Binary Trees
 - [ ] QRT: Quartets
