@@ -18,12 +18,6 @@ from .suff import suff
 # children.
 
 
-def nodes(graph):
-    s = list(graph.keys())
-    e = [y["n"] for v in graph.values() for y in v]
-    return set(s) | set(e)
-
-
 def as_edges(graph):
     for k in sorted(graph):
         for v in graph[k]:

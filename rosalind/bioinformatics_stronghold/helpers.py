@@ -162,3 +162,26 @@ def dbinom(x, size, prob):
 def pbinom(q, size, prob):
     """Binomial distribution function"""
     return sum([dbinom(x, size, prob) for x in range(0, q + 1)])
+
+
+class Graph:
+    """Simple graph implementation"""
+
+    def __init__(self):
+        self.g = {}
+
+    def add_edge(self, a, b, weight=1, label=""):
+        if a not in self.g:
+            self.g[a] = {}
+        self.g.append({"n": b, "w": weight, "l": label})
+
+    def nodes(self):
+        s = list(self.g.keys())
+        e = [y["n"] for v in self.g.values() for y in v]
+        return set(s) | set(e)
+
+
+def nodes(graph):
+    s = list(graph.keys())
+    e = [y["n"] for v in graph.values() for y in v]
+    return set(s) | set(e)

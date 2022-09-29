@@ -3,3 +3,4 @@
 __pycache__
 .coverage
 tests/__pycache__/*
+dist/

@@ -169,7 +169,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [SIMS: Finding a Motif with Modifications](rosalind/bioinformatics_stronghold/sims.py)
 - [x] [SMGB: Semiglobal Alignment](rosalind/bioinformatics_stronghold/smgb.py)
 - [x] [MREP: Identifying Maximal Repeats](rosalind/bioinformatics_stronghold/mrep.py)
-- [ ] NWCK: Distances in Trees
+- [x] [NWCK: Distances in Trees](rosalind/bioinformatics_stronghold/nwck.py)
 - [ ] ITWV: Finding Disjoint Motifs in a Gene
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
