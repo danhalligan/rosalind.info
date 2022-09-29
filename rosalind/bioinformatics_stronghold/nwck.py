@@ -27,7 +27,7 @@ from .helpers import nodes
 # We will create an undirected graph (connecting children to parents)
 # and remove the root when we're done (to facilitate a search for shortest
 # path...)
-def parse_newick(newick):
+def parse_newick(newick, directed=True):
     newick = re.sub(",,", ",.,", newick)
     newick = re.sub(r"\(,", "(.,", newick)
     newick = re.sub(r",\)", ",.)", newick)
@@ -50,14 +50,16 @@ def parse_newick(newick):
                 count += 1
                 node = str(count)
             g[node_stack[-1]].append({"n": node, "w": 1})
-            g[node].append({"n": node_stack[-1], "w": 1})
+            if not directed:
+                g[node].append({"n": node_stack[-1], "w": 1})
             node_stack += [node]
         elif tokens[i] != "," and (i == 0 or tokens[i - 1] != ")"):
             if tokens[i] == ".":
                 count += 1
                 tokens[i] = str(count)
             g[node_stack[-1]].append({"n": tokens[i], "w": 1})
-            g[tokens[i]].append({"n": node_stack[-1], "w": 1})
+            if not directed:
+                g[tokens[i]].append({"n": node_stack[-1], "w": 1})
         i -= 1
     return g
 
@@ -81,7 +83,7 @@ def dij(graph, start=1):
 
 
 def newick_dist(tree, nodes):
-    return dij(parse_newick(tree), nodes[0])[nodes[1]]
+    return dij(parse_newick(tree, directed=False), nodes[0])[nodes[1]]
 
 
 def main(file):

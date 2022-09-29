@@ -171,19 +171,19 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [MREP: Identifying Maximal Repeats](rosalind/bioinformatics_stronghold/mrep.py)
 - [x] [NWCK: Distances in Trees](rosalind/bioinformatics_stronghold/nwck.py)
 - [x] [NKEW: Newick Format with Edge Weights](rosalind/bioinformatics_stronghold/nkew.py)
+- [x] [CTBL: Creating a Character Table](rosalind/bioinformatics_stronghold/ctbl.py)
+- [x] [CUNR: Counting Unrooted Binary Trees](rosalind/bioinformatics_stronghold/cunr.py)
+- [x] [ROOT: Counting Rooted Binary Trees](rosalind/bioinformatics_stronghold/root.py)
 - [ ] ITWV: Finding Disjoint Motifs in a Gene
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
-- [ ] CTBL: Creating a Character Table
 - [ ] CSTR: Creating a Character Table from Genetic Strings
-- [ ] CUNR: Counting Unrooted Binary Trees
 - [ ] QRT: Quartets
 - [ ] CHBP: Character-Based Phylogeny
 - [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
 - [ ] MEND: Inferring Genotype from a Pedigree
-- [ ] ROOT: Counting Rooted Binary Trees
 - [ ] SPTD: Phylogeny Comparison with Split Distance
 - [ ] ALPH: Alignment-Based Phylogeny
 - [ ] CSET: Fixing an Inconsistent Character Set

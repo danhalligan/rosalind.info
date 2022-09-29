@@ -10,7 +10,7 @@ from .nwck import dij
 # TODO: rewrite to be a single function...
 
 
-def parse_newick(newick):
+def parse_newick(newick, directed=True):
     newick = re.sub(",,", ",.,", newick)
     newick = re.sub(r"\(,", "(.,", newick)
     newick = re.sub(r",\)", ",.)", newick)
@@ -35,7 +35,8 @@ def parse_newick(newick):
                 else:
                     node, weight = tokens[i + 1].split(":")
             g[node_stack[-1]].append({"n": node, "w": int(weight)})
-            g[node].append({"n": node_stack[-1], "w": int(weight)})
+            if not directed:
+                g[node].append({"n": node_stack[-1], "w": int(weight)})
             node_stack += [node]
         elif tokens[i] != "," and (i == 0 or tokens[i - 1] != ")"):
             if tokens[i] == ".":
@@ -43,13 +44,14 @@ def parse_newick(newick):
                 tokens[i] = str(count)
             node, weight = tokens[i].split(":")
             g[node_stack[-1]].append({"n": node, "w": int(weight)})
-            g[node].append({"n": node_stack[-1], "w": int(weight)})
+            if not directed:
+                g[node].append({"n": node_stack[-1], "w": int(weight)})
         i -= 1
     return g
 
 
 def newick_dist(tree, nodes):
-    return dij(parse_newick(tree), nodes[0])[nodes[1]]
+    return dij(parse_newick(tree, directed=False), nodes[0])[nodes[1]]
 
 
 def main(file):
