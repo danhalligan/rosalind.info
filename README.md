@@ -178,7 +178,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [CTBL: Creating a Character Table](rosalind/bioinformatics_stronghold/ctbl.py)
 - [x] [CUNR: Counting Unrooted Binary Trees](rosalind/bioinformatics_stronghold/cunr.py)
 - [x] [ROOT: Counting Rooted Binary Trees](rosalind/bioinformatics_stronghold/root.py)
-- [ ] ITWV: Finding Disjoint Motifs in a Gene
+- [x] [ITWV: Finding Disjoint Motifs in a Gene](rosalind/bioinformatics_stronghold/itwv.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
