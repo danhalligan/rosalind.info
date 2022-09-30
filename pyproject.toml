@@ -11,7 +11,7 @@ bio = "^1.4.0"
 typer = "^0.6.1"
 
 [tool.poetry.dev-dependencies]
-black = "^20.8b1"
+black = "^22.3.0"
 pre-commit = "^2.10.1"
 pytest = "^5.2"
 flake8 = "^3.8.4"
@@ -25,7 +25,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]
-exclude = "tests/snapshots/snap_test_cli.py"
+exclude = "tests/snapshots/"
 
 [tool.poetry.scripts]
 rosalind = "rosalind.cli:main"
