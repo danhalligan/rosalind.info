@@ -15,7 +15,7 @@ def yaml_resource(file):
 def matrix_resource(file):
     lines = open(resource_file(file)).read().splitlines()
     header = lines[0].split()
-    return dict([x[0], dict(zip(header, map(int, x.split()[1:])))] for x in lines[1:])
+    return {x[0]: dict(zip(header, map(int, x.split()[1:]))) for x in lines[1:]}
 
 
 @cache

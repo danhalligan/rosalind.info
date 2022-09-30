@@ -22,10 +22,9 @@ def gbk(orgm, start, end):
         mindate=start,
         maxdate=end,
     )
-    record = Entrez.read(handle)
-    return record["Count"]
+    return Entrez.read(handle)
 
 
 def main(file):
     orgm, start, end = open(file).read().splitlines()
-    print(gbk(orgm, start, end))
+    print(gbk(orgm, start, end)["Count"])

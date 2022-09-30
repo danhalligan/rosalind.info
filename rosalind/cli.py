@@ -1,5 +1,4 @@
 import os
-import sys
 from typer import Argument, Option, run, Exit
 from pathlib import Path
 from typing import Optional
@@ -21,8 +20,6 @@ def module_root():
 # guess the location of a problem based on name
 def find_location(problem):
     paths = module_root().glob(f"**/{problem}.py")
-    if not paths:
-        sys.exit(f"Could not find solution for problem {problem}")
     path = list(paths)[0]
     return split_path(path)[-2]
 
@@ -40,7 +37,11 @@ def solve(
     test: bool = Option(False, help="Run with test data."),
 ):
     """Solve a given Rosalind problem"""
-    loc = str(find_location(problem))
+    try:
+        loc = str(find_location(problem))
+    except IndexError:
+        print(f"Failed to find solution '{problem}'!")
+        raise Exit()
     if test:
         os.environ["ROSALIND_TEST"] = "1"
         path = test_file(problem)
@@ -50,8 +51,7 @@ def solve(
     if not Path(path).is_file():
         print(f"{path} is not a file!")
         raise Exit()
-    module = f"rosalind.{loc}.{problem}"
-    module = import_module(module)
+    module = import_module(f"rosalind.{loc}.{problem}")
     getattr(module, "main")(path)
 
 
