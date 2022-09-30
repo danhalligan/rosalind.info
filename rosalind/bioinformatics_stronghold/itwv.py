@@ -27,7 +27,7 @@ def valid(pos, move, seqs):
     return len(set(bases)) == 1
 
 
-# Queue based iterate approach. Pop a position from the queue and add all
+# Queue based iterative approach. Pop a position from the queue and add all
 # new valid positions.
 # If we reach the end of both our patterns, they can be interleaved.
 def itwv(s, t, u):
