@@ -2,27 +2,18 @@
 
 from .nwck import parse_newick
 import numpy as np
-from itertools import product
-
-
-def cross(a, b):
-    x = {
-        (0, 0): [4, 0, 0],
-        (0, 1): [2, 2, 0],
-        (1, 0): [2, 2, 0],
-        (1, 1): [1, 2, 1],
-        (0, 2): [0, 4, 0],
-        (2, 0): [0, 4, 0],
-        (1, 2): [0, 2, 2],
-        (2, 1): [0, 2, 2],
-        (2, 2): [0, 0, 4],
-    }
-    return np.array(x[a, b]) / 4
 
 
 # For two vectors of parent genotype probabilities, compute child vector
 def child_gt(a, b):
-    return sum(cross(i, j) * a[i] * b[j] for i, j in product([0, 1, 2], repeat=2))
+    cross = np.array(
+        [
+            [[1, 0, 0], [0.5, 0.5, 0], [0, 1, 0]],
+            [[0.5, 0.5, 0], [0.25, 0.5, 0.25], [0, 0.5, 0.5]],
+            [[0, 1, 0], [0, 0.5, 0.5], [0, 0, 1]],
+        ]
+    )
+    return np.dot(a, np.dot(b, cross))
 
 
 def main(file):
