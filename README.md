@@ -1,6 +1,8 @@
 ![http://rosalind.info](/images/logo.png)
 
 ![CI workflow](https://github.com/danhalligan/rosalind.info/actions/workflows/ci.yaml/badge.svg)
+![License](https://img.shields.io/github/license/danhalligan/rosalind.info)
+![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 This repository contains solutions to bioinformatics coding challenges from
 [rosalind.info]. Problems are organised by the various different
