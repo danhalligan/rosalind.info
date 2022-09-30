@@ -180,6 +180,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [ROOT: Counting Rooted Binary Trees](rosalind/bioinformatics_stronghold/root.py)
 - [x] [ITWV: Finding Disjoint Motifs in a Gene](rosalind/bioinformatics_stronghold/itwv.py)
 - [x] [QRT: Quartets](rosalind/bioinformatics_stronghold/qrt.py)
+- [x] [MEND: Inferring Genotype from a Pedigree](rosalind/bioinformatics_stronghold/mend.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
@@ -187,7 +188,6 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [ ] CHBP: Character-Based Phylogeny
 - [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
-- [ ] MEND: Inferring Genotype from a Pedigree
 - [ ] SPTD: Phylogeny Comparison with Split Distance
 - [ ] ALPH: Alignment-Based Phylogeny
 - [ ] CSET: Fixing an Inconsistent Character Set
