@@ -181,10 +181,10 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [ITWV: Finding Disjoint Motifs in a Gene](rosalind/bioinformatics_stronghold/itwv.py)
 - [x] [QRT: Quartets](rosalind/bioinformatics_stronghold/qrt.py)
 - [x] [MEND: Inferring Genotype from a Pedigree](rosalind/bioinformatics_stronghold/mend.py)
+- [x] [CSTR: Creating a Character Table from Genetic Strings](rosalind/bioinformatics_stronghold/cstr.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
-- [ ] CSTR: Creating a Character Table from Genetic Strings
 - [ ] CHBP: Character-Based Phylogeny
 - [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
