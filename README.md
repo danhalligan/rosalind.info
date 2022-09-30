@@ -1,5 +1,7 @@
 ![http://rosalind.info](/images/logo.png)
 
+![CI workflow](https://github.com/danhalligan/rosalind.info/actions/workflows/ci.yaml/badge.svg)
+
 This repository contains solutions to bioinformatics coding challenges from
 [rosalind.info]. Problems are organised by the various different
 [locations]:
