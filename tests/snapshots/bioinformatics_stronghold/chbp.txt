@@ -1,1 +1,1 @@
-(dog,(cat,rabbit),(rat,(elephant,mouse)));
+(((cat,rabbit),dog),(elephant,mouse),rat);
