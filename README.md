@@ -184,12 +184,12 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [CSTR: Creating a Character Table from Genetic Strings](rosalind/bioinformatics_stronghold/cstr.py)
 - [x] [CHBP: Character-Based Phylogeny](rosalind/bioinformatics_stronghold/chbp.py)
 - [x] [CSET: Fixing an Inconsistent Character Set](rosalind/bioinformatics_stronghold/cset.py)
+- [x] [OSYM: Isolating Symbols in Alignments](rosalind/bioinformatics_stronghold/osym.py)
+- [x] [SPTD: Phylogeny Comparison with Split Distance](rosalind/bioinformatics_stronghold/sptd.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
-- [ ] OSYM: Isolating Symbols in Alignments
 - [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
-- [ ] SPTD: Phylogeny Comparison with Split Distance
 - [ ] ALPH: Alignment-Based Phylogeny
 - [ ] QRTD: Quartet Distance
 - [ ] RSUB: Identifying Reversing Substitutions
