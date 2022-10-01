@@ -1,0 +1,4 @@
+>Rosalind_35
+ATAGATA
+>Rosalind_5
+ACAGGTA
