@@ -182,10 +182,10 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [QRT: Quartets](rosalind/bioinformatics_stronghold/qrt.py)
 - [x] [MEND: Inferring Genotype from a Pedigree](rosalind/bioinformatics_stronghold/mend.py)
 - [x] [CSTR: Creating a Character Table from Genetic Strings](rosalind/bioinformatics_stronghold/cstr.py)
+- [x] [CHBP: Character-Based Phylogeny](rosalind/bioinformatics_stronghold/chbp.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] OSYM: Isolating Symbols in Alignments
-- [ ] CHBP: Character-Based Phylogeny
 - [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
 - [ ] SPTD: Phylogeny Comparison with Split Distance
