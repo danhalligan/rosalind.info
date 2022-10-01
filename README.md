@@ -186,9 +186,9 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [CSET: Fixing an Inconsistent Character Set](rosalind/bioinformatics_stronghold/cset.py)
 - [x] [OSYM: Isolating Symbols in Alignments](rosalind/bioinformatics_stronghold/osym.py)
 - [x] [SPTD: Phylogeny Comparison with Split Distance](rosalind/bioinformatics_stronghold/sptd.py)
+- [x] [CNTQ: Counting Quartets](rosalind/bioinformatics_stronghold/cntq.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
-- [ ] CNTQ: Counting Quartets
 - [ ] EUBT: Enumerating Unrooted Binary Trees
 - [ ] ALPH: Alignment-Based Phylogeny
 - [ ] QRTD: Quartet Distance

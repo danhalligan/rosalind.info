@@ -4,6 +4,7 @@ version = "0.2.0"
 description = "Solutions to the Rosalind problems"
 authors = ["Dan Halligan"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
