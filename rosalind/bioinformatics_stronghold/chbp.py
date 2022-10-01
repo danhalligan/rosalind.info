@@ -20,12 +20,7 @@ def flatten(x):
         return str(x)
 
 
-def main(file):
-    names, *characters = open(file).read().splitlines()
-    names = names.split()
-
-    characters = [[int(x) for x in list(ch)] for ch in characters]
-
+def chbp(names, characters):
     while characters:
         i, v = pick_informative(characters)
         ind = [i for i, x in enumerate(characters[i]) if x == v]
@@ -34,5 +29,12 @@ def main(file):
         for ch in characters:
             del ch[ind[1]]
         characters = drop_uninformative(characters)
+    return tuple(names)
 
-    print(flatten(tuple(names)), ";", sep="")
+
+def main(file):
+    names, *characters = open(file).read().splitlines()
+    names = names.split()
+    characters = [[int(x) for x in list(ch)] for ch in characters]
+    res = chbp(names, characters)
+    print(flatten(res), ";", sep="")
