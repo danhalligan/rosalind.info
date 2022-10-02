@@ -8,7 +8,10 @@ class Parser:
     """Parse problem data text files"""
 
     def __init__(self, file):
-        self.file = file
+        if type(file) == str:
+            self.handle = open(file)
+        else:
+            self.handle = file
 
     def dna(self):
         """Return the first line as a DNA string"""
@@ -20,15 +23,15 @@ class Parser:
 
     def line(self):
         """Return the first line"""
-        return open(self.file).readline().rstrip()
+        return self.handle.readline().rstrip()
 
     def lines(self):
         """Return lines as a chomped list"""
-        return open(self.file).read().splitlines()
+        return self.handle.read().splitlines()
 
     def fastas(self):
         """Return fasta records as a list"""
-        return list(read_fasta(open(self.file, "r")))
+        return list(read_fasta(self.handle))
 
     def seqs(self):
         """Return sequences from fasta records as a list"""
