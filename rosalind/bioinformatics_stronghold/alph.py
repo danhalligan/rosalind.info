@@ -101,6 +101,7 @@ def main(file):
     seqs = {x.id: x.seq for x in seqs}
     total_score, seqs = alph(tree, seqs, 1)
     print(total_score)
-    for node in set(tree.keys()) - set("0"):
-        print(f">{node}")
-        print(seqs[node])
+    for node in tree.keys():
+        if node != "0":
+            print(f">{node}")
+            print(seqs[node])
