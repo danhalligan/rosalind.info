@@ -31,4 +31,4 @@ def sdag(graph):
 
 
 def main(file):
-    print(*sdag(parse_graph(open(file), directed=True, weighted=True)), " ")
+    print(*sdag(parse_graph(open(file), directed=True, weighted=True)))
