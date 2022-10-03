@@ -21,9 +21,12 @@ def scc(graph):
         n = order.pop(0)
         res = find_component(n, rev)
         order = [x for x in order if x not in res]
+        for k in rev.keys():
+            rev[k] = [n for n in rev[k] if n not in res]
         yield res
 
 
 def main(file):
     graph = parse_graph(open(file), directed=True)
+    print(list(scc(graph)))
     print(len(list(scc(graph))))

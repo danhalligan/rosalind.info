@@ -379,9 +379,9 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [HDAG: Hamiltonian Path in DAG](rosalind/algorithmic_heights/hdag.py)
 - [x] [NWC: Negative Weight Cycle](rosalind/algorithmic_heights/nwc.py)
 - [x] [SCC: Strongly Connected Components](rosalind/algorithmic_heights/scc.py)
+- [x] [SC: Semi-Connected Graph](rosalind/algorithmic_heights/sc.py)
 - [ ] 2SAT: 2-Satisfiability
 - [ ] GS: General Sink
-- [ ] SC: Semi-Connected Graph
 - [ ] SDAG: Shortest Paths in DAG
 
 
