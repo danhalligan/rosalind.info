@@ -1,0 +1,5 @@
+dog mouse 1 A->G->A
+dog mouse 2 A->G->A
+dog rat 3 T->G->T
+rat cat 3 G->T->G
+rat ostrich 3 G->T->G

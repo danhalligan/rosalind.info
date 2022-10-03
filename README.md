@@ -187,12 +187,12 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [OSYM: Isolating Symbols in Alignments](rosalind/bioinformatics_stronghold/osym.py)
 - [x] [SPTD: Phylogeny Comparison with Split Distance](rosalind/bioinformatics_stronghold/sptd.py)
 - [x] [CNTQ: Counting Quartets](rosalind/bioinformatics_stronghold/cntq.py)
+- [x] [ALPH: Alignment-Based Phylogeny](rosalind/bioinformatics_stronghold/alph.py)
+- [x] [RSUB: Identifying Reversing Substitutions](rosalind/bioinformatics_stronghold/rsub.py)
 - [ ] KSIM: Finding All Similar Motifs
 - [ ] LAFF: Local Alignment with Affine Gap Penalty
 - [ ] EUBT: Enumerating Unrooted Binary Trees
-- [ ] ALPH: Alignment-Based Phylogeny
 - [ ] QRTD: Quartet Distance
-- [ ] RSUB: Identifying Reversing Substitutions
 
 ### Bioinformatics Armory
 
