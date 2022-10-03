@@ -371,7 +371,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 - [x] [MED: Median](rosalind/algorithmic_heights/med.py)
 - [x] [QS: Quick Sort](rosalind/algorithmic_heights/qs.py)
 - [x] [HEA: Building a Heap](rosalind/algorithmic_heights/hea.py)
-- [ ] SQ: Square in a Graph
+- [x] [SQ: Square in a Graph](rosalind/algorithmic_heights/sq.py)
 - [x] [BF: Bellman-Ford Algorithm](rosalind/algorithmic_heights/bf.py)
 - [x] [CTE: Shortest Cycle Through a Given Edge](rosalind/algorithmic_heights/cte.py)
 - [x] [HS: Heap Sort](rosalind/algorithmic_heights/hs.py)
