@@ -28,5 +28,4 @@ def scc(graph):
 
 def main(file):
     graph = parse_graph(open(file), directed=True)
-    print(list(scc(graph)))
     print(len(list(scc(graph))))
