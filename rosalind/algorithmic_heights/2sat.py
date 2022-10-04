@@ -1,5 +1,7 @@
 # 2-Satisfiability
 
+# https://en.wikipedia.org/wiki/2-satisfiability#Strongly_connected_components
+
 from .helpers import ints, recursionlimit
 from .scc import scc
 from .sc import condense
