@@ -10,14 +10,13 @@ from .hdag import hdag
 
 
 def find_comp(n, components):
-    for j, comp2 in enumerate(components):
-        if n in comp2:
+    for j, comp in enumerate(components):
+        if n in comp:
             return j
 
 
-def sc(graph):
+def condense(graph, components):
     ngraph = {}
-    components = list(scc(graph))
     for i, comp in enumerate(components):
         ngraph[i] = set(
             [
@@ -27,6 +26,12 @@ def sc(graph):
                 if dest not in comp
             ]
         )
+    return ngraph
+
+
+def sc(graph):
+    components = list(scc(graph))
+    ngraph = condense(graph, components)
     return -1 if hdag(ngraph) == [-1] else 1
 
 

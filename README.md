@@ -382,7 +382,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [SC: Semi-Connected Graph](rosalind/algorithmic_heights/sc.py)
 * [x] [GS: General Sink](rosalind/algorithmic_heights/gs.py)
 * [x] [SDAG: Shortest Paths in DAG](rosalind/algorithmic_heights/sdag.py)
-* [ ] 2SAT: 2-Satisfiability
+* [x] [2SAT: 2-Satisfiability](rosalind/algorithmic_heights/2sat.py)
 
 
 [rosalind.info]: https://rosalind.info
