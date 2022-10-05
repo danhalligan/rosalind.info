@@ -331,7 +331,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [BA10D: Compute the Probability of a String Emitted by an HMM](rosalind/bioinformatics_textbook_track/ba10d.py)
 * [x] [BA10E: Construct a Profile HMM](rosalind/bioinformatics_textbook_track/ba10e.py)
 * [x] [BA10F: Construct a Profile HMM with Pseudocounts](rosalind/bioinformatics_textbook_track/ba10f.py)
-* [ ] BA10G: Perform a Multiple Sequence Alignment with a Profile HMM
+* [x] [BA10G: Perform a Multiple Sequence Alignment with a Profile HMM](rosalind/bioinformatics_textbook_track/ba10g.py)
 * [x] [BA10H: Estimate the Parameters of an HMM](rosalind/bioinformatics_textbook_track/ba10h.py)
 * [x] [BA10I: Implement Viterbi Learning](rosalind/bioinformatics_textbook_track/ba10i.py)
 * [x] [BA10J: Solve the Soft Decoding Problem](rosalind/bioinformatics_textbook_track/ba10j.py)
