@@ -189,8 +189,8 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [CNTQ: Counting Quartets](rosalind/bioinformatics_stronghold/cntq.py)
 * [x] [ALPH: Alignment-Based Phylogeny](rosalind/bioinformatics_stronghold/alph.py)
 * [x] [RSUB: Identifying Reversing Substitutions](rosalind/bioinformatics_stronghold/rsub.py)
+* [x] [LAFF: Local Alignment with Affine Gap Penalty](rosalind/bioinformatics_stronghold/laff.py)
 * [ ] KSIM: Finding All Similar Motifs
-* [ ] LAFF: Local Alignment with Affine Gap Penalty
 * [ ] EUBT: Enumerating Unrooted Binary Trees
 * [ ] QRTD: Quartet Distance
 
