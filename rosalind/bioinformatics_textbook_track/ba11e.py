@@ -10,7 +10,7 @@ from math import inf
 # Bellman-Ford Algorithm (required for the negative weights)
 # This version finds longest path in a DAG from source to sink and returns path
 def bf(start, graph):
-    d = [-inf for _ in range(len(nodes(graph)))]
+    d = {n: -inf for n in nodes(graph)}
     d[start] = 0
     p = {start: []}
     n = nodes(graph)

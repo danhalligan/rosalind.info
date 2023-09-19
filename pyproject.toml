@@ -10,6 +10,7 @@ license = "MIT"
 python = "^3.8"
 bio = "^1.4"
 typer = "^0.9"
+networkx = "^3.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.10"
