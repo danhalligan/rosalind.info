@@ -31,12 +31,20 @@ def better_bwmatching(LastColumn, Pattern):
                 top = FirstOccurrence[symbol] + Countsymbol[top][symbol]
                 bottom = FirstOccurrence[symbol] + Countsymbol[bottom + 1][symbol] - 1
             else:
-                return 0
+                return None
         else:
-            return bottom - top + 1
+            return top, bottom
+
+
+def count_matches(LastColumn, Pattern):
+    m = better_bwmatching(LastColumn, Pattern)
+    if m:
+        return m[1] - m[0] + 1
+    else:
+        return 0
 
 
 def main(file):
     text, patterns = open(file).read().splitlines()
     patterns = patterns.split()
-    print(*[better_bwmatching(text, pattern) for pattern in patterns])
+    print(*[count_matches(text, pattern) for pattern in patterns])

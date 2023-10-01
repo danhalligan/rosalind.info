@@ -15,7 +15,7 @@ def bwtj(seq):
     last = list(index_seq(seq))
     curr = ("$", 0)
     res = ""
-    for i in range(len(seq)):
+    for _ in range(len(seq)):
         curr = first[last.index(curr)]
         res += curr[0]
     return res

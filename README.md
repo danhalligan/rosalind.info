@@ -320,7 +320,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [BA9K: Generate the Last-to-First Mapping of a String](rosalind/bioinformatics_textbook_track/ba9k.py)
 * [x] [BA9L: Implement BWMatching](rosalind/bioinformatics_textbook_track/ba9l.py)
 * [x] [BA9M: Implement BetterBWMatching](rosalind/bioinformatics_textbook_track/ba9m.py)
-* [ ] BA9N: Find All Occurrences of a Collection of Patterns in a String
+* [x] [BA9N: Find All Occurrences of a Collection of Patterns in a String](rosalind/bioinformatics_textbook_track/ba9n.py)
 * [ ] BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String
 * [x] [BA9P: Implement TreeColoring](rosalind/bioinformatics_textbook_track/ba9p.py)
 * [x] [BA9Q: Construct the Partial Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9q.py)
