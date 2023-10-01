@@ -2,54 +2,34 @@
 
 from .ba9q import partial_suffix_array
 from .ba9i import bwt
-from .ba9m import better_bwmatching
-
-
-# Given a character that is known to appear in a specific position in a column,
-# determine whether it is the first, 2nd, ... occurrence
-def getN(ch, row, column):
-    n, i = 0, 0
-    while i <= row:
-        if ch == column[i]:
-            n += 1
-        i += 1
-    return n
-
-
-# Find a specific occurrence of character in column
-def get_char(ch, column, occurrence):
-    count = 0
-    for pos, x in enumerate(column):
-        if ch == x:
-            count += 1
-            if count == occurrence:
-                return pos
+from .ba9m import better_bwmatching, first_occurrence, count_symbols
+from .ba9j import index_seq
 
 
 # Locate match within text using partial suffix array
-def find_position(row, psa, LastColumn):
-    psa = dict(psa)
-    FirstColumn = sorted(LastColumn)
+def find_location(row, psa, first_indexed, last_indexed):
     steps = 0
     while row not in psa:
-        predecessor = LastColumn[row]
-        occurrence = getN(predecessor, row, LastColumn)
-        row = get_char(predecessor, FirstColumn, occurrence)
+        row = first_indexed.index(last_indexed[row])
         steps += 1
     return steps + psa[row]
 
 
+# Use better_bwmatching to obtain match indices, then we use the
+# (partial) suffix array to recover the starting position for each
 def match_positions(text, patterns, k=10):
-    psa = partial_suffix_array(text + "$", k)
-    LastColumn = bwt(text + "$")
-    for Pattern in patterns:
-        matches = better_bwmatching(LastColumn, Pattern)
-        if matches:
-            top, bottom = matches
-            yield [find_position(i, psa, LastColumn) for i in range(top, bottom + 1)]
+    psa = dict(partial_suffix_array(text + "$", k))
+    last_column = bwt(text + "$")
+    first_indexed = list(index_seq(sorted(last_column)))
+    last_indexed = list(index_seq(last_column))
+    fo = first_occurrence(last_column)
+    cs = count_symbols(last_column)
+    for pattern in patterns:
+        for match in better_bwmatching(fo, last_column, pattern, cs):
+            yield find_location(match, psa, first_indexed, last_indexed)
 
 
 def main(file):
     text, *patterns = open(file).read().splitlines()
-    matches = sorted(m for ms in match_positions(text, patterns) for m in ms)
+    matches = sorted(match_positions(text, patterns))
     print(*matches)

@@ -3,6 +3,7 @@
 from collections import defaultdict
 
 
+# Yields each character with the occurrence number
 def index_seq(seq):
     d = defaultdict(int)
     for c in seq:

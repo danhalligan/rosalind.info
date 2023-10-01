@@ -18,9 +18,9 @@ def count_symbols(seq):
     return count
 
 
-def better_bwmatching(LastColumn, Pattern):
-    FirstOccurrence = first_occurrence(LastColumn)
-    Countsymbol = count_symbols(LastColumn)
+# Unlike the book, this returns an array of match indexes (not e.g. length of
+# that array, or the top/bottom indexes).
+def better_bwmatching(FirstOccurrence, LastColumn, Pattern, Countsymbol):
     top = 0
     bottom = len(LastColumn) - 1
     while top <= bottom:
@@ -31,20 +31,14 @@ def better_bwmatching(LastColumn, Pattern):
                 top = FirstOccurrence[symbol] + Countsymbol[top][symbol]
                 bottom = FirstOccurrence[symbol] + Countsymbol[bottom + 1][symbol] - 1
             else:
-                return None
+                return []
         else:
-            return top, bottom
-
-
-def count_matches(LastColumn, Pattern):
-    m = better_bwmatching(LastColumn, Pattern)
-    if m:
-        return m[1] - m[0] + 1
-    else:
-        return 0
+            return list(range(top, bottom + 1))
 
 
 def main(file):
     text, patterns = open(file).read().splitlines()
     patterns = patterns.split()
-    print(*[count_matches(text, pattern) for pattern in patterns])
+    fo = first_occurrence(text)
+    cs = count_symbols(text)
+    print(*[len(better_bwmatching(fo, text, p, cs)) for p in patterns])
