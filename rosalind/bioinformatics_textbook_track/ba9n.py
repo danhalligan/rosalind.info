@@ -28,9 +28,8 @@ def match_positions(text, patterns, k=10):
     psa = dict(partial_suffix_array(text + "$", k))
     last_column = bwt(text + "$")
     fol = first_occurrence(last_column)
-    FirstColumn = sorted(last_column)
-    fos = first_occurrence(FirstColumn)
     cs = count_symbols(last_column)
+    fos = first_occurrence(sorted(last_column))
     for pattern in patterns:
         for match in better_bwmatching(fol, last_column, pattern, cs):
             yield find_location(match, psa, last_column, fos)
