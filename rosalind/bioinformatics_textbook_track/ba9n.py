@@ -3,14 +3,21 @@
 from .ba9q import partial_suffix_array
 from .ba9i import bwt
 from .ba9m import better_bwmatching, first_occurrence, count_symbols
-from .ba9j import index_seq
 
 
 # Locate match within text using partial suffix array
-def find_location(row, psa, first_indexed, last_indexed):
+# We don't use our `index_seq` function here (which stores the occurrence of
+# each character in a sequence) since it kind of defeats the
+# memory saving from using a partial suffix array.
+# We can use the fact that the first column is lexicographically sorted to
+# easily find the nth occurrence of a character within the first column
+# (its just the position of the 1st occurrence + n)!
+def find_location(row, psa, last_column, first):
     steps = 0
     while row not in psa:
-        row = first_indexed.index(last_indexed[row])
+        predecessor = last_column[row]
+        occurrence = last_column[: row + 1].count(predecessor)
+        row = first[predecessor] + occurrence - 1
         steps += 1
     return steps + psa[row]
 
@@ -20,13 +27,13 @@ def find_location(row, psa, first_indexed, last_indexed):
 def match_positions(text, patterns, k=10):
     psa = dict(partial_suffix_array(text + "$", k))
     last_column = bwt(text + "$")
-    first_indexed = list(index_seq(sorted(last_column)))
-    last_indexed = list(index_seq(last_column))
-    fo = first_occurrence(last_column)
+    fol = first_occurrence(last_column)
+    FirstColumn = sorted(last_column)
+    fos = first_occurrence(FirstColumn)
     cs = count_symbols(last_column)
     for pattern in patterns:
-        for match in better_bwmatching(fo, last_column, pattern, cs):
-            yield find_location(match, psa, first_indexed, last_indexed)
+        for match in better_bwmatching(fol, last_column, pattern, cs):
+            yield find_location(match, psa, last_column, fos)
 
 
 def main(file):
