@@ -2,11 +2,15 @@
 
 from collections import defaultdict
 from copy import copy
+from itertools import accumulate
 
 
+# First position of each symbol in the first column. Note the first column
+# is always sorted lexicographically.
 def first_occurrence(seq):
-    first = sorted(seq)
-    return dict((x, first.index(x)) for x in set(seq))
+    letters = sorted(set(seq))
+    counts = [0] + list(accumulate(seq.count(x) for x in letters))
+    return dict(zip(letters, counts))
 
 
 def count_symbols(seq):
@@ -21,8 +25,7 @@ def count_symbols(seq):
 # Unlike the book, this returns an array of match indexes (not e.g. length of
 # that array, or the top/bottom indexes).
 def better_bwmatching(FirstOccurrence, LastColumn, Pattern, Countsymbol):
-    top = 0
-    bottom = len(LastColumn) - 1
+    top, bottom = 0, len(LastColumn) - 1
     while top <= bottom:
         if Pattern:
             Pattern, symbol = Pattern[:-1], Pattern[-1]
