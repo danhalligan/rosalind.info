@@ -321,7 +321,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [BA9L: Implement BWMatching](rosalind/bioinformatics_textbook_track/ba9l.py)
 * [x] [BA9M: Implement BetterBWMatching](rosalind/bioinformatics_textbook_track/ba9m.py)
 * [x] [BA9N: Find All Occurrences of a Collection of Patterns in a String](rosalind/bioinformatics_textbook_track/ba9n.py)
-* [ ] BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String
+* [x] [BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String](rosalind/bioinformatics_textbook_track/ba9o.py)
 * [x] [BA9P: Implement TreeColoring](rosalind/bioinformatics_textbook_track/ba9p.py)
 * [x] [BA9Q: Construct the Partial Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9q.py)
 * [ ] BA9R: Construct a Suffix Tree from a Suffix Array
@@ -387,11 +387,11 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 
 [rosalind.info]: https://rosalind.info
 [locations]: https://rosalind.info/problems/locations/
-[Python Village]: https://rosalind.info/problems/list-view/?location=python_village
-[Bioinformatics Stronghold]: https://rosalind.info/problems/list-view/
-[Algorithmic Heights]: https://rosalind.info/problems/list-view/?location=algorithmic_heights
-[Bioinformatics Armory]: https://rosalind.info/problems/list-view/?location=bioinformatics_armory
-[Bioinformatics Textbook Track]: https://rosalind.info/problems/list-view/?location=bioinformatics_textbook_track
+[Python Village]: https://rosalind.info/problems/list-view/?location=python-village
+[Bioinformatics Stronghold]: https://rosalind.info/problems/list-view/?location=bioinformatics-stronghold
+[Algorithmic Heights]: https://rosalind.info/problems/list-view/?location=algorithmic-heights
+[Bioinformatics Armory]: https://rosalind.info/problems/list-view/?location=bioinformatics-armory
+[Bioinformatics Textbook Track]: https://rosalind.info/problems/list-view/?location=bioinformatics-textbook-track
 [Bioinformatics Algorithms: An Active Learning Approach]: https://www.bioinformaticsalgorithms.org/
 [Algorithms]: https://www.google.co.uk/books/edition/Algorithms/DJSUCgAAQBAJ?hl=en
 [poetry]: https://python-poetry.org/
