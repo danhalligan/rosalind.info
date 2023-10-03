@@ -19,7 +19,7 @@ def bwmatching(FirstColumn, LastColumn, Pattern):
     while top <= bottom:
         if Pattern:
             Pattern, symbol = Pattern[:-1], Pattern[-1]
-            x = [LastColumn[i] for i in range(top, bottom + 1)]
+            x = list(LastColumn[top : bottom + 1])
             if symbol in x:
                 topIndex = x.index(symbol) + top
                 bottomIndex = rindex(x, symbol) + top

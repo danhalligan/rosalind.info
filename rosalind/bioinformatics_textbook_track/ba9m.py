@@ -29,8 +29,7 @@ def better_bwmatching(FirstOccurrence, LastColumn, Pattern, Countsymbol):
     while top <= bottom:
         if Pattern:
             Pattern, symbol = Pattern[:-1], Pattern[-1]
-            x = [LastColumn[i] for i in range(top, bottom + 1)]
-            if symbol in x:
+            if symbol in LastColumn[top : bottom + 1]:
                 top = FirstOccurrence[symbol] + Countsymbol[top][symbol]
                 bottom = FirstOccurrence[symbol] + Countsymbol[bottom + 1][symbol] - 1
             else:
