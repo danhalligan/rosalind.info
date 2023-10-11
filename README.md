@@ -191,7 +191,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [RSUB: Identifying Reversing Substitutions](rosalind/bioinformatics_stronghold/rsub.py)
 * [x] [LAFF: Local Alignment with Affine Gap Penalty](rosalind/bioinformatics_stronghold/laff.py)
 * [x] [EUBT: Enumerating Unrooted Binary Trees](rosalind/bioinformatics_stronghold/eubt.py)
-* [ ] KSIM: Finding All Similar Motifs
+* [x] [KSIM: Finding All Similar Motifs](rosalind/bioinformatics_stronghold/ksim.py)
 * [ ] QRTD: Quartet Distance
 
 ### Bioinformatics Armory
