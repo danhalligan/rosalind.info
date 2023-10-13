@@ -324,7 +324,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [BA9O: Find All Approximate Occurrences of a Collection of Patterns in a String](rosalind/bioinformatics_textbook_track/ba9o.py)
 * [x] [BA9P: Implement TreeColoring](rosalind/bioinformatics_textbook_track/ba9p.py)
 * [x] [BA9Q: Construct the Partial Suffix Array of a String](rosalind/bioinformatics_textbook_track/ba9q.py)
-* [ ] BA9R: Construct a Suffix Tree from a Suffix Array
+* [x] [BA9R: Construct a Suffix Tree from a Suffix Array](rosalind/bioinformatics_textbook_track/ba9r.py)
 * [x] [BA10A: Compute the Probability of a Hidden Path](rosalind/bioinformatics_textbook_track/ba10a.py)
 * [x] [BA10B: Compute the Probability of an Outcome Given a Hidden Path](rosalind/bioinformatics_textbook_track/ba10b.py)
 * [x] [BA10C: Implement the Viterbi Algorithm](rosalind/bioinformatics_textbook_track/ba10c.py)
