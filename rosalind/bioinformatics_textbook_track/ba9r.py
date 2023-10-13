@@ -48,5 +48,5 @@ def main(file):
     lcp = [int(x) for x in lcp.split(", ")]
 
     tree = ba9r(txt, sa, lcp)
-    for key in tree.keys():
-        print(tree[key].label)
+    labels = [tree[key].label for key in tree.keys()]
+    print(*sorted(labels), sep="\n")
