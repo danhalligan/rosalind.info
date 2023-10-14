@@ -192,7 +192,7 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [LAFF: Local Alignment with Affine Gap Penalty](rosalind/bioinformatics_stronghold/laff.py)
 * [x] [EUBT: Enumerating Unrooted Binary Trees](rosalind/bioinformatics_stronghold/eubt.py)
 * [x] [KSIM: Finding All Similar Motifs](rosalind/bioinformatics_stronghold/ksim.py)
-* [?] [QRTD: Quartet Distance](rosalind/bioinformatics_stronghold/qrtd.py)
+* [x] [QRTD: Quartet Distance](rosalind/bioinformatics_stronghold/qrtd.py)
 
 #### Notes
 
