@@ -192,7 +192,15 @@ export ENTREZ_EMAIL=rosalind.franklin@cam.ac.uk
 * [x] [LAFF: Local Alignment with Affine Gap Penalty](rosalind/bioinformatics_stronghold/laff.py)
 * [x] [EUBT: Enumerating Unrooted Binary Trees](rosalind/bioinformatics_stronghold/eubt.py)
 * [x] [KSIM: Finding All Similar Motifs](rosalind/bioinformatics_stronghold/ksim.py)
-* [ ] QRTD: Quartet Distance
+* [?] [QRTD: Quartet Distance](rosalind/bioinformatics_stronghold/qrtd.py)
+
+#### Notes
+
+* For "QRTD" I have cheated by using [tqDist]. For the solution to run you will
+  need to install `quartet_dist` and have it available in your path. Well done
+  to anyone else who solved this properly!
+
+[tqDist]: https://www.birc.au.dk/~cstorm/software/tqdist/
 
 ### Bioinformatics Armory
 
