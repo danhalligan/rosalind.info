@@ -13,10 +13,10 @@ This repository contains solutions to bioinformatics coding challenges from
 * [Bioinformatics Stronghold]: problems to discover the algorithms underlying a
   variety of bioinformatics topics.
 * [Bioinformatics Armory]: unlike the stronghold in the Armory we solve
+  problems by using existing tools.
 * [Bioinformatics Textbook Track]: problems associated with [Bioinformatics
   Algorithms: An Active Learning Approach].
 * [Algorithmic Heights]: exercises to accompany the book [Algorithms].
-  problems using existing tools.
 
 ## Running the solutions
 
@@ -48,7 +48,7 @@ poetry run rosalind --test ini2
 
 `pytest-snapshot` is used to test solutions to problems. In many cases solutions
 generated will and should exactly match the "Sample Output" given at
-rosalind.info. In cases cases, where e.g. ordering is not important, the
+rosalind.info. In cases, where e.g. ordering is not important, the
 expected solutions (in `tests/expected`) have been updated to match code used
 here, but are equally valid solutions.
 
